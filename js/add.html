@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+//addTest();
+function addTest(){
+	function add (num) {
+	    var count = num;
+			    function _b(l)
+			    {
+			        count += l;
+			        return _b
+			    }
+	   
+	    return _b;
+	}
+	var c = add(1)(2)(4);
+	
+	console.log(c)   
+}
+
+//obj();
+function obj(){
+	var Obj = 
+	{
+		    a: 1,
+		    func: function()
+		    {
+		        this.a += 1;
+		        return this
+		    }
+	}
+		Obj.func().func();
+		console.log(Obj.a);  
+}
+
+// function Gadget(name,color)
+// {
+// 	this.name = name;
+// 	this.color = color;
+// 	this.whatAreYou = function()
+// 	{
+// 		return this.name + ' ' + this.color;
+// 	}
+// }
+
+// Gadget.prototype = {
+// 	price : 100,
+// 	rateing : 20,
+// 	getInfo : function()
+// 	{
+// 		return this.price + ' ' + this.rateing;
+// 	}
+// }
+// var g = new Gadget("aa","bb");
+
+// Gadget.prototype.get = function(what)
+// {
+// 	return this[what];
+// }
+// console.log(g);
+function Shape()
+{
+	this.name = 'Shape';
+	this.toString = function()
+	{
+		return this.name;
+	}
+}
+
+function TwoDShape()
+{
+	this.name = '2D Shape';
+}
+
+function Triangle(side,height)
+{
+	this.name = 'Triangle';
+	this.side = side;
+	this.height = height;
+	this.getArea = function()
+	{
+		return this.side * this.height / 2;
+	}
+}
+
+TwoDShape.prototype = new Shape();
+TwoDShape.prototype.constructor = TwoDShape;
+
+Triangle.prototype = new TwoDShape();
+Triangle.prototype.constructor = Triangle;
+var p = new Triangle(12,17);
+
+TwoDShape.prototype.addType = 'addType';
+console.log(p);
+</script>
+</body>
+</html>

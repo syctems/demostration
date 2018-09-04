@@ -1,4 +1,4 @@
-
+﻿
 ﻿初期：《C++ Primer》、《Effective C++》、《More Effective C++》、《Effective STL》、《C++标准程序库》、《Exceptional C++》、《C++编程规范》
 
 初期：《C++ Primer》、《Effective C++》、《More Effective C++》、《Effective STL》、《C++标准程序库》、《Exceptional C++》、《C++编程规范》
@@ -7,8 +7,9 @@
 
 http://bestcbooks.com/categories/c-plus-plus/
 
+192 - 219
 
-9，10月 java编程思想(170)   spring框架
+9，10月 java编程思想(192)   
 11，12月  算法   重构
 1月 c/c++ primer plus QT  
 系统和网络编程

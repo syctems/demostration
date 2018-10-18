@@ -1,0 +1,110 @@
+MIN_PER_HR	bank.cpp	/^const int MIN_PER_HR = 60;$/;"	v
+main	bank.cpp	/^int main()$/;"	f
+newcustomer	bank.cpp	/^bool newcustomer(double x)$/;"	f
+COORDIN_H_	coordin.h	2;"	d
+angle	coordin.h	/^    double angle;$/;"	m	struct:polar
+distance	coordin.h	/^    double distance;$/;"	m	struct:polar
+polar	coordin.h	/^struct polar$/;"	s
+rect	coordin.h	/^struct rect$/;"	s
+x	coordin.h	/^    double x;$/;"	m	struct:rect
+y	coordin.h	/^    double y;$/;"	m	struct:rect
+main	file1.cpp	/^int main()$/;"	f
+rect_to_polar	file2.cpp	/^polar rect_to_polar(rect xypos)$/;"	f
+show_polar	file2.cpp	/^void show_polar(polar dapos)$/;"	f
+NUM	hangman.cpp	/^const int NUM = 26;$/;"	v
+main	hangman.cpp	/^int main()$/;"	f
+wordlist	hangman.cpp	/^const string wordlist[NUM] = {$/;"	v
+debts	namesp.cpp	/^namespace debts$/;"	n	file:
+getDebt	namesp.cpp	/^    void getDebt(Debt & rd)$/;"	f	namespace:debts
+getPerson	namesp.cpp	/^    void getPerson(Person & rp)$/;"	f	namespace:pers
+pers	namesp.cpp	/^namespace pers$/;"	n	file:
+showDebt	namesp.cpp	/^    void showDebt(const Debt & rd)$/;"	f	namespace:debts
+showPerson	namesp.cpp	/^    void showPerson(const Person & rp)$/;"	f	namespace:pers
+sumDebts	namesp.cpp	/^    double sumDebts(const Debt ar[],int n)$/;"	f	namespace:debts
+Debt	namesp.h	/^    struct Debt$/;"	s	namespace:debts
+Person	namesp.h	/^    struct Person$/;"	s	namespace:pers
+amount	namesp.h	/^        double amount;$/;"	m	struct:debts::Debt
+debts	namesp.h	/^namespace debts$/;"	n
+fname	namesp.h	/^        std::string fname;$/;"	m	struct:pers::Person
+lname	namesp.h	/^        std::string lname;$/;"	m	struct:pers::Person
+name	namesp.h	/^        Person name;$/;"	m	struct:debts::Debt
+pers	namesp.h	/^namespace pers$/;"	n
+another	namessp.cpp	/^void another(void)$/;"	f
+main	namessp.cpp	/^int main(void)$/;"	f
+other	namessp.cpp	/^void other(void)$/;"	f
+Queue	queue.cpp	/^Queue::Queue(int qs) : qsize(qs)$/;"	f	class:Queue
+dequeue	queue.cpp	/^bool Queue::dequeue(Item & item)$/;"	f	class:Queue
+enqueue	queue.cpp	/^bool Queue::enqueue(const Item & item)$/;"	f	class:Queue
+isempty	queue.cpp	/^bool Queue::isempty() const$/;"	f	class:Queue
+isfull	queue.cpp	/^bool Queue::isfull() const$/;"	f	class:Queue
+queuecount	queue.cpp	/^int Queue::queuecount() const$/;"	f	class:Queue
+set	queue.cpp	/^void Customer::set(long when)$/;"	f	class:Customer
+~Queue	queue.cpp	/^Queue::~Queue()$/;"	f	class:Queue
+Customer	queue.h	/^    Customer() { arrive = processtime = 0;}$/;"	f	class:Customer
+Customer	queue.h	/^class Customer$/;"	c
+Item	queue.h	/^typedef Customer Item;$/;"	t
+Node	queue.h	/^    struct Node { Item item; struct Node * next;};$/;"	s	class:Queue
+QUEUE_H_	queue.h	2;"	d
+Q_SIZE	queue.h	/^    enum { Q_SIZE = 10};$/;"	e	enum:Queue::__anon1
+Queue	queue.h	/^    Queue(const Queue & q):qsize(0){}$/;"	f	class:Queue
+Queue	queue.h	/^class Queue$/;"	c
+arrive	queue.h	/^    long arrive;$/;"	m	class:Customer
+front	queue.h	/^    Node * front;$/;"	m	class:Queue
+item	queue.h	/^    struct Node { Item item; struct Node * next;};$/;"	m	struct:Queue::Node
+items	queue.h	/^    int items;$/;"	m	class:Queue
+next	queue.h	/^    struct Node { Item item; struct Node * next;};$/;"	m	struct:Queue::Node	typeref:struct:Queue::Node::Node
+operator =	queue.h	/^    Queue & operator=(const Queue & q){return *this;}$/;"	f	class:Queue
+processtime	queue.h	/^    int processtime;$/;"	m	class:Customer
+ptime	queue.h	/^    int ptime() const { return processtime;}$/;"	f	class:Customer
+qsize	queue.h	/^    const int qsize;$/;"	m	class:Queue
+rear	queue.h	/^    Node * rear;$/;"	m	class:Queue
+when	queue.h	/^    long when() const { return arrive;}$/;"	f	class:Customer
+main	shape.cpp	/^int main()$/;"	f
+StringBad	stmgbad.cpp	/^StringBad::StringBad()$/;"	f	class:StringBad
+StringBad	stmgbad.cpp	/^StringBad::StringBad(const char * s)$/;"	f	class:StringBad
+num_strings	stmgbad.cpp	/^int StringBad::num_strings = 0;$/;"	m	class:StringBad	file:
+operator <<	stmgbad.cpp	/^std::ostream & operator<<(std::ostream & os,const StringBad & st)$/;"	f
+~StringBad	stmgbad.cpp	/^StringBad::~StringBad()$/;"	f	class:StringBad
+STRNGBAD_H_	stmgbad.h	3;"	d
+StringBad	stmgbad.h	/^class StringBad$/;"	c
+len	stmgbad.h	/^        int len;$/;"	m	class:StringBad
+num_strings	stmgbad.h	/^        static int num_strings;$/;"	m	class:StringBad
+str	stmgbad.h	/^        char * str;$/;"	m	class:StringBad
+acquire	stock00.cpp	/^void Stock::acquire(const std::string & co,long n,double pr)$/;"	f	class:Stock
+buy	stock00.cpp	/^void Stock::buy(long num,double price)$/;"	f	class:Stock
+sell	stock00.cpp	/^void Stock::sell(long num,double price)$/;"	f	class:Stock
+show	stock00.cpp	/^void Stock::show()$/;"	f	class:Stock
+update	stock00.cpp	/^void Stock::update(double price)$/;"	f	class:Stock
+STOCK00_H_	stock00.h	2;"	d
+Stock	stock00.h	/^class Stock$/;"	c
+company	stock00.h	/^        std::string company;$/;"	m	class:Stock
+set_tot	stock00.h	/^        void set_tot(){total_val = shares * share_val;}$/;"	f	class:Stock
+share_val	stock00.h	/^        double share_val;$/;"	m	class:Stock
+shares	stock00.h	/^        long shares;$/;"	m	class:Stock
+total_val	stock00.h	/^        double total_val;$/;"	m	class:Stock
+main	str1.cpp	/^int main()$/;"	f
+accumulate	strc_ref.cpp	/^free_throws & accumulate(free_throws & target,const free_throws & source)$/;"	f
+attempts	strc_ref.cpp	/^    int attempts;$/;"	m	struct:free_throws	file:
+display	strc_ref.cpp	/^void display(const free_throws & ft)$/;"	f
+free_throws	strc_ref.cpp	/^struct free_throws$/;"	s	file:
+made	strc_ref.cpp	/^    int made;$/;"	m	struct:free_throws	file:
+main	strc_ref.cpp	/^int main()$/;"	f
+name	strc_ref.cpp	/^    std::string name;$/;"	m	struct:free_throws	file:
+percent	strc_ref.cpp	/^    float percent;$/;"	m	struct:free_throws	file:
+set_pc	strc_ref.cpp	/^void set_pc(free_throws & ft)$/;"	f
+main	strfile.cpp	/^int main()$/;"	f
+main	test.c	/^int main()$/;"	f
+put1	test.c	/^int put1(const char * string)$/;"	f
+A	test.cpp	/^class A$/;"	c	file:
+a	test.cpp	/^        int a;$/;"	m	class:A	file:
+main	test.cpp	/^int main()$/;"	f
+main	usestock0.cpp	/^int main()$/;"	f
+callme1	vegnews.cpp	/^void callme1(StringBad & rsb)$/;"	f
+callme2	vegnews.cpp	/^void callme2(StringBad sb)$/;"	f
+main	vegnews.cpp	/^int main()$/;"	f
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

@@ -1,0 +1,627 @@
+AddingGroups	AddingGroups.java	/^public class AddingGroups$/;"	c
+main	AddingGroups.java	/^	public static void main(String[] args)$/;"	m	class:AddingGroups
+Apple	AppleAndOranges.java	/^class Apple$/;"	c
+AppleAndOranges	AppleAndOranges.java	/^public class AppleAndOranges$/;"	c
+counter	AppleAndOranges.java	/^	private static long counter;$/;"	f	class:Apple	file:
+id	AppleAndOranges.java	/^	private final long id = counter++;$/;"	f	class:Apple	file:
+id	AppleAndOranges.java	/^	public long id()$/;"	m	class:Apple
+main	AppleAndOranges.java	/^	public static void main(String[] args)$/;"	m	class:AppleAndOranges
+Apply	Apply.java	/^public class Apply$/;"	c
+Downcase	Apply.java	/^class Downcase extends Processor$/;"	c
+Processor	Apply.java	/^class Processor$/;"	c
+Splitter	Apply.java	/^class Splitter extends Processor$/;"	c
+Upcase	Apply.java	/^class Upcase extends Processor$/;"	c
+main	Apply.java	/^	public static void main(String[] args)$/;"	m	class:Apply
+name	Apply.java	/^	public String name()$/;"	m	class:Processor
+process	Apply.java	/^	Object process(Object input)$/;"	m	class:Processor
+process	Apply.java	/^	String process(Object input)$/;"	m	class:Downcase
+process	Apply.java	/^	String process(Object input)$/;"	m	class:Splitter
+process	Apply.java	/^	String process(Object input)$/;"	m	class:Upcase
+process	Apply.java	/^	public static void process(Processor p,Object s)$/;"	m	class:Apply
+s	Apply.java	/^	public static String s = "disagreement with beliefs is by incorrect";$/;"	f	class:Apply
+AsListInference	AsListInference.java	/^public class AsListInference$/;"	c
+Crusty	AsListInference.java	/^class Crusty extends Snow {}$/;"	c
+Heavy	AsListInference.java	/^class Heavy extends Power {}$/;"	c
+Light	AsListInference.java	/^class Light extends Power {}$/;"	c
+Power	AsListInference.java	/^class Power extends Snow {} $/;"	c
+Slush	AsListInference.java	/^class Slush extends Snow {}$/;"	c
+Snow	AsListInference.java	/^class Snow {}$/;"	c
+main	AsListInference.java	/^	public static void main(String[] args)$/;"	m	class:AsListInference
+Banana	BananaPeel.java	/^class Banana$/;"	c
+BananaPeel	BananaPeel.java	/^public  class BananaPeel$/;"	c
+main	BananaPeel.java	/^	public static void main(String[] args)$/;"	m	class:BananaPeel
+peel	BananaPeel.java	/^	void peel(int i)$/;"	m	class:Banana
+Beetle	Beetle.java	/^	public Beetle()$/;"	m	class:Beetle
+Beetle	Beetle.java	/^public class Beetle extends Insect$/;"	c
+Insect	Beetle.java	/^	Insect()$/;"	m	class:Insect
+Insect	Beetle.java	/^class Insect$/;"	c
+i	Beetle.java	/^	private int i = 9;$/;"	f	class:Insect	file:
+j	Beetle.java	/^	protected int j;$/;"	f	class:Insect
+k	Beetle.java	/^	private int k = printInit("Beetle initialized");$/;"	f	class:Beetle	file:
+main	Beetle.java	/^	public static void main(String[] args)$/;"	m	class:Beetle
+printInit	Beetle.java	/^	static int printInit(String s)$/;"	m	class:Insect
+x1	Beetle.java	/^	private static int x1 = printInit("Insect x1 initialized");$/;"	f	class:Insect	file:
+x2	Beetle.java	/^	private static int x2 = printInit("Beetle x2 initialized");$/;"	f	class:Beetle	file:
+BigEgg	BigEgg.java	/^public class BigEgg extends Egg$/;"	c
+Egg	BigEgg.java	/^	public Egg()$/;"	m	class:Egg
+Egg	BigEgg.java	/^class Egg$/;"	c
+Yolk	BigEgg.java	/^		public Yolk()$/;"	m	class:BigEgg.Yolk
+Yolk	BigEgg.java	/^		public Yolk()$/;"	m	class:Egg.Yolk
+Yolk	BigEgg.java	/^	protected class Yolk$/;"	c	class:Egg
+Yolk	BigEgg.java	/^	public class Yolk$/;"	c	class:BigEgg
+main	BigEgg.java	/^	public static void main(String[] args)$/;"	m	class:BigEgg
+y	BigEgg.java	/^	private Yolk y;$/;"	f	class:Egg	file:
+BigEgg2	BigEgg2.java	/^	public BigEgg2()$/;"	m	class:BigEgg2
+BigEgg2	BigEgg2.java	/^public class BigEgg2 extends Egg2$/;"	c
+Egg2	BigEgg2.java	/^	public Egg2()$/;"	m	class:Egg2
+Egg2	BigEgg2.java	/^class Egg2$/;"	c
+Yolk	BigEgg2.java	/^		public Yolk()$/;"	m	class:BigEgg2.Yolk
+Yolk	BigEgg2.java	/^		public Yolk()$/;"	m	class:Egg2.Yolk
+Yolk	BigEgg2.java	/^	protected class Yolk$/;"	c	class:Egg2
+Yolk	BigEgg2.java	/^	public class Yolk extends Egg2.Yolk$/;"	c	class:BigEgg2
+f	BigEgg2.java	/^		public void f()$/;"	m	class:BigEgg2.Yolk
+f	BigEgg2.java	/^		public void f()$/;"	m	class:Egg2.Yolk
+g	BigEgg2.java	/^	public void g()$/;"	m	class:Egg2
+insertYolk	BigEgg2.java	/^	public void insertYolk(Yolk yy)$/;"	m	class:Egg2
+main	BigEgg2.java	/^	public static void main(String[] args)$/;"	m	class:BigEgg2
+y	BigEgg2.java	/^	private Yolk y = new Yolk();$/;"	f	class:Egg2	file:
+Callbacks	Callbacks.java	/^public class Callbacks$/;"	c
+Callee1	Callbacks.java	/^class Callee1 implements Incrementable$/;"	c
+Callee2	Callbacks.java	/^class Callee2 extends MyIncrement$/;"	c
+Callee2.this.increment	Callbacks.java	/^		Callee2.this.increment();$/;"	m	class:Callee2.Closure
+Caller	Callbacks.java	/^	Caller(Incrementable cbh)$/;"	m	class:Caller
+Caller	Callbacks.java	/^class Caller$/;"	c
+Closure	Callbacks.java	/^	private class Closure implements Incrementable$/;"	c	class:Callee2
+Incrementable	Callbacks.java	/^interface Incrementable$/;"	i
+MyIncrement	Callbacks.java	/^class MyIncrement$/;"	c
+callbackReference	Callbacks.java	/^	private Incrementable callbackReference;$/;"	f	class:Caller	file:
+f	Callbacks.java	/^	static void f(MyIncrement mi)$/;"	m	class:MyIncrement
+getCallbackReference	Callbacks.java	/^	Incrementable getCallbackReference()$/;"	m	class:Callee2
+go	Callbacks.java	/^	void go()$/;"	m	class:Caller
+i	Callbacks.java	/^	private int i = 0;$/;"	f	class:Callee1	file:
+i	Callbacks.java	/^	private int i = 0;$/;"	f	class:Callee2	file:
+increment	Callbacks.java	/^	public void increment()$/;"	m	class:Callee1
+increment	Callbacks.java	/^	public void increment()$/;"	m	class:Callee2
+increment	Callbacks.java	/^	public void increment()$/;"	m	class:MyIncrement
+increment	Callbacks.java	/^	void increment();$/;"	m	interface:Incrementable
+main	Callbacks.java	/^	public static void main(String[] args)$/;"	m	class:Callbacks
+Car	Car.java	/^	public Car()$/;"	m	class:Car
+Car	Car.java	/^public class Car$/;"	c
+Door	Car.java	/^class Door$/;"	c
+Engine	Car.java	/^class Engine$/;"	c
+Wheel	Car.java	/^class Wheel$/;"	c
+Window	Car.java	/^class Window$/;"	c
+close	Car.java	/^	public void close() {}$/;"	m	class:Door
+e	Car.java	/^	public Engine e = new Engine();$/;"	f	class:Car
+inflate	Car.java	/^	public void inflate(int psi)$/;"	m	class:Wheel
+l	Car.java	/^	public Door l = new Door();$/;"	f	class:Car
+main	Car.java	/^	public static void main(String[] args)$/;"	m	class:Car
+open	Car.java	/^	public void open() {}$/;"	m	class:Door
+r	Car.java	/^	public Door r = new Door();$/;"	f	class:Car
+rev	Car.java	/^	public void rev() {}$/;"	m	class:Engine
+rolldown	Car.java	/^	public void rolldown() {}$/;"	m	class:Window
+rollup	Car.java	/^	public void rollup()$/;"	m	class:Window
+start	Car.java	/^	public void start() {}$/;"	m	class:Engine
+stop	Car.java	/^	public void stop() {}$/;"	m	class:Engine
+w	Car.java	/^	public Wheel w[] = new Wheel[4];$/;"	f	class:Car
+wd	Car.java	/^	public Window wd = new Window();$/;"	f	class:Door
+Art	Cartoon.java	/^	Art()$/;"	m	class:Art
+Art	Cartoon.java	/^class Art$/;"	c
+Cartoon	Cartoon.java	/^	Cartoon()$/;"	m	class:Cartoon
+Cartoon	Cartoon.java	/^public class Cartoon extends Drawing$/;"	c
+Drawing	Cartoon.java	/^	Drawing()$/;"	m	class:Drawing
+Drawing	Cartoon.java	/^class Drawing extends Art$/;"	c
+main	Cartoon.java	/^	public static void main(String[] args)$/;"	m	class:Cartoon
+BoardGame	Chess.java	/^	BoardGame(int i)$/;"	m	class:BoardGame
+BoardGame	Chess.java	/^class BoardGame extends Game $/;"	c
+Chess	Chess.java	/^	Chess()$/;"	m	class:Chess
+Chess	Chess.java	/^public class Chess extends BoardGame$/;"	c
+Game	Chess.java	/^	Game(int i)$/;"	m	class:Game
+Game	Chess.java	/^class Game$/;"	c
+main	Chess.java	/^	public static void main(String[] args)$/;"	m	class:Chess
+CovariantReturn	CovariantReturn.java	/^public class CovariantReturn$/;"	c
+Grain	CovariantReturn.java	/^class Grain$/;"	c
+Mill	CovariantReturn.java	/^class Mill$/;"	c
+Wheat	CovariantReturn.java	/^class Wheat extends Grain$/;"	c
+WheatMill	CovariantReturn.java	/^class WheatMill extends Mill$/;"	c
+main	CovariantReturn.java	/^	public static void main(String[] args)$/;"	m	class:CovariantReturn
+process	CovariantReturn.java	/^	Grain process()$/;"	m	class:Mill
+process	CovariantReturn.java	/^	Wheat process()$/;"	m	class:WheatMill
+toString	CovariantReturn.java	/^	public String toString()$/;"	m	class:Grain
+toString	CovariantReturn.java	/^	public String toString()$/;"	m	class:Wheat
+CrossContainerIterator	CrossContainerIteration.java	/^public class CrossContainerIterator$/;"	c
+display	CrossContainerIteration.java	/^	public static void display(Iterator<Pet> it)$/;"	m	class:CrossContainerIterator
+main	CrossContainerIteration.java	/^	public static void main(String[] args)$/;"	m	class:CrossContainerIterator
+Cleanser	Detergent.java	/^class Cleanser$/;"	c
+Detergent	Detergent.java	/^public class Detergent extends Cleanser$/;"	c
+append	Detergent.java	/^	public void append(String a)$/;"	m	class:Cleanser
+apply	Detergent.java	/^	public void apply()$/;"	m	class:Cleanser
+dilute	Detergent.java	/^	public void dilute()$/;"	m	class:Cleanser
+foam	Detergent.java	/^	public void foam()$/;"	m	class:Detergent
+main	Detergent.java	/^	public static void main(String[] args)$/;"	m	class:Cleanser
+main	Detergent.java	/^	public static void main(String[] args)$/;"	m	class:Detergent
+s	Detergent.java	/^	private String s = "Cleanser";$/;"	f	class:Cleanser	file:
+scrub	Detergent.java	/^	public void scrub()$/;"	m	class:Cleanser
+scrub	Detergent.java	/^	public void scrub()$/;"	m	class:Detergent
+toString	Detergent.java	/^	public String toString()$/;"	m	class:Cleanser
+Dinner	Dinner.java	/^public class Dinner$/;"	c
+main	Dinner.java	/^	public static void main(String[] args)$/;"	m	class:Dinner
+DotNew	DotNew.java	/^public class DotNew$/;"	c
+Inner	DotNew.java	/^		void Inner()$/;"	m	class:DotNew.Inner
+Inner	DotNew.java	/^	public class Inner$/;"	c	class:DotNew
+main	DotNew.java	/^	public static void main(String[] args)$/;"	m	class:DotNew
+DotThis	DotThis.java	/^public class DotThis$/;"	c
+Inner	DotThis.java	/^	public class Inner$/;"	c	class:DotThis
+f	DotThis.java	/^	void f()$/;"	m	class:DotThis
+inner	DotThis.java	/^	public Inner inner()$/;"	m	class:DotThis
+main	DotThis.java	/^	public static void main(String[] args)$/;"	m	class:DotThis
+outer	DotThis.java	/^		public DotThis outer()$/;"	m	class:DotThis.Inner
+Enum	Enum.java	/^public class Enum$/;"	c
+FLAMING	Enum.java	/^		NOT,MILD,MEDIUM,HOT,FLAMING$/;"	e	enum:Enum.Spiciness	file:
+HOT	Enum.java	/^		NOT,MILD,MEDIUM,HOT,FLAMING$/;"	e	enum:Enum.Spiciness	file:
+MEDIUM	Enum.java	/^		NOT,MILD,MEDIUM,HOT,FLAMING$/;"	e	enum:Enum.Spiciness	file:
+MILD	Enum.java	/^		NOT,MILD,MEDIUM,HOT,FLAMING$/;"	e	enum:Enum.Spiciness	file:
+NOT	Enum.java	/^		NOT,MILD,MEDIUM,HOT,FLAMING$/;"	e	enum:Enum.Spiciness	file:
+Spiciness	Enum.java	/^	public enum Spiciness$/;"	g	class:Enum
+main	Enum.java	/^	public static void main(String[] args)$/;"	m	class:Enum
+Implementation1	Factories.java	/^	private Implementation1() {}$/;"	m	class:Implementation1	file:
+Implementation1	Factories.java	/^class Implementation1 implements Service$/;"	c
+Implementation2	Factories.java	/^	private Implementation2() {}$/;"	m	class:Implementation2	file:
+Implementation2	Factories.java	/^class Implementation2 implements Service$/;"	c
+Service	Factories.java	/^interface Service$/;"	i
+ServiceFactory	Factories.java	/^interface ServiceFactory$/;"	i
+factories	Factories.java	/^public class factories$/;"	c
+factory	Factories.java	/^	public static ServiceFactory factory = new ServiceFactory(){$/;"	f	class:Implementation1
+factory	Factories.java	/^	public static ServiceFactory factory = new ServiceFactory(){$/;"	f	class:Implementation2
+getService	Factories.java	/^	Service getService();$/;"	m	interface:ServiceFactory
+main	Factories.java	/^	public static void main(String[] args)$/;"	m	class:factories
+method1	Factories.java	/^	public void method1()$/;"	m	class:Implementation1
+method1	Factories.java	/^	public void method1()$/;"	m	class:Implementation2
+method1	Factories.java	/^	void method1();$/;"	m	interface:Service
+method2	Factories.java	/^	public void method2()$/;"	m	class:Implementation1
+method2	Factories.java	/^	public void method2()$/;"	m	class:Implementation2
+method2	Factories.java	/^	void method2();$/;"	m	interface:Service
+serviceConsumer	Factories.java	/^	public static void serviceConsumer(ServiceFactory fact)$/;"	m	class:factories
+CountedInteger	FilledList.java	/^class CountedInteger$/;"	c
+FilledList	FilledList.java	/^	public FilledList(Class<T> type)$/;"	m	class:FilledList
+FilledList	FilledList.java	/^public class FilledList<T>$/;"	c
+counter	FilledList.java	/^	private static long counter;$/;"	f	class:CountedInteger	file:
+create	FilledList.java	/^	public List<T> create(int nElements)$/;"	m	class:FilledList
+id	FilledList.java	/^	private final long id = counter++;$/;"	f	class:CountedInteger	file:
+main	FilledList.java	/^	public static void main(String[] args)$/;"	m	class:FilledList
+toString	FilledList.java	/^	public String toString(){ return Long.toString(id);}$/;"	m	class:CountedInteger
+type	FilledList.java	/^	private Class<T> type;$/;"	f	class:FilledList	file:
+Flower	Flower.java	/^	Flower()$/;"	m	class:Flower
+Flower	Flower.java	/^	Flower(String s, int petals)$/;"	m	class:Flower
+Flower	Flower.java	/^	Flower(String ss)$/;"	m	class:Flower
+Flower	Flower.java	/^	Flower(int petals)$/;"	m	class:Flower
+Flower	Flower.java	/^public class Flower$/;"	c
+main	Flower.java	/^	public static void main(String[] args)$/;"	m	class:Flower
+petalCount	Flower.java	/^	int petalCount = 0;$/;"	f	class:Flower
+printPetalCount	Flower.java	/^	void printPetalCount()$/;"	m	class:Flower
+s	Flower.java	/^	String s = "initial value";$/;"	f	class:Flower
+Amphibian	Frog.java	/^	Amphibian()$/;"	m	class:Amphibian
+Amphibian	Frog.java	/^class Amphibian extends Animal$/;"	c
+Animal	Frog.java	/^	Animal()$/;"	m	class:Animal
+Animal	Frog.java	/^class Animal extends LivingCreature$/;"	c
+Characteristic	Frog.java	/^	Characteristic(String s)$/;"	m	class:Characteristic
+Characteristic	Frog.java	/^class Characteristic$/;"	c
+Description	Frog.java	/^	Description(String s)$/;"	m	class:Description
+Description	Frog.java	/^class Description$/;"	c
+Frog	Frog.java	/^	public void Frog()$/;"	m	class:Frog
+Frog	Frog.java	/^public class Frog extends Amphibian$/;"	c
+LivingCreature	Frog.java	/^	LivingCreature()$/;"	m	class:LivingCreature
+LivingCreature	Frog.java	/^class LivingCreature$/;"	c
+c	Frog.java	/^	private Characteristic c = new Characteristic("is alive");$/;"	f	class:LivingCreature	file:
+dispose	Frog.java	/^	protected void dispose()$/;"	m	class:Amphibian
+dispose	Frog.java	/^	protected void dispose()$/;"	m	class:Animal
+dispose	Frog.java	/^	protected void dispose()$/;"	m	class:Characteristic
+dispose	Frog.java	/^	protected void dispose()$/;"	m	class:Description
+dispose	Frog.java	/^	protected void dispose()$/;"	m	class:LivingCreature
+main	Frog.java	/^	public static void main(String[] args)$/;"	m	class:Frog
+p	Frog.java	/^	private Characteristic p = new Characteristic("can't live in water");$/;"	f	class:Amphibian	file:
+p	Frog.java	/^	private Characteristic p = new Characteristic("croaks");$/;"	f	class:Frog	file:
+p	Frog.java	/^	private Characteristic p = new Characteristic("has heart");$/;"	f	class:Animal	file:
+p	Frog.java	/^	private Description p = new Description("basic living creature");$/;"	f	class:LivingCreature	file:
+s	Frog.java	/^	private String s;$/;"	f	class:Characteristic	file:
+s	Frog.java	/^	private String s;$/;"	f	class:Description	file:
+t	Frog.java	/^	private Description t = new Description("Animal not vegetable");$/;"	f	class:Animal	file:
+t	Frog.java	/^	private Description t = new Description("both water and land");$/;"	f	class:Amphibian	file:
+t	Frog.java	/^	private Description t = new Description("eats bugs");$/;"	f	class:Frog	file:
+Checkers	Game.java	/^	private Checkers() {}$/;"	m	class:Checkers	file:
+Checkers	Game.java	/^class Checkers implements Game$/;"	c
+Chess	Game.java	/^	private Chess() {}$/;"	m	class:Chess	file:
+Chess	Game.java	/^class Chess implements Game$/;"	c
+Game	Game.java	/^interface Game$/;"	i
+GameFactory	Game.java	/^interface GameFactory$/;"	i
+Games	Game.java	/^public class Games$/;"	c
+MOVES	Game.java	/^	private static final int MOVES = 3;$/;"	f	class:Checkers	file:
+MOVES	Game.java	/^	private static final int MOVES = 4;$/;"	f	class:Chess	file:
+factory	Game.java	/^	public static GameFactory factory = new GameFactory(){$/;"	f	class:Checkers
+factory	Game.java	/^	public static GameFactory factory = new GameFactory(){$/;"	f	class:Chess
+getGame	Game.java	/^	Game getGame();$/;"	m	interface:GameFactory
+main	Game.java	/^	public static void main(String[] args)$/;"	m	class:Games
+move	Game.java	/^	boolean move();$/;"	m	interface:Game
+move	Game.java	/^	public boolean move()$/;"	m	class:Checkers
+move	Game.java	/^	public boolean move()$/;"	m	class:Chess
+moves	Game.java	/^	private int moves = 0;$/;"	f	class:Checkers	file:
+moves	Game.java	/^	private int moves = 0;$/;"	f	class:Chess	file:
+playGame	Game.java	/^	public static void playGame(GameFactory factory)$/;"	m	class:Games
+Generation	Generation.java	/^public class Generation$/;"	c
+f	Generation.java	/^	public <T> void f(T x)$/;"	m	class:Generation
+main	Generation.java	/^	public static void main(String[] args)$/;"	m	class:Generation
+GenericVarargs	GenericVarargs.java	/^public class GenericVarargs$/;"	c
+main	GenericVarargs.java	/^	public static void main(String[] args)$/;"	m	class:GenericVarargs
+makeList	GenericVarargs.java	/^	public static <T> List<T> makeList(T... args)$/;"	m	class:GenericVarargs
+Apple	GenericsAndUpcasting.java	/^class Apple {}$/;"	c
+Braeburn	GenericsAndUpcasting.java	/^class Braeburn extends Apple {}$/;"	c
+Fuji	GenericsAndUpcasting.java	/^class Fuji extends Apple {}$/;"	c
+Gala	GenericsAndUpcasting.java	/^class Gala extends Apple {}$/;"	c
+GenericsAndUpcasting	GenericsAndUpcasting.java	/^public class GenericsAndUpcasting$/;"	c
+Granny	GenericsAndUpcasting.java	/^class Granny extends Apple {}$/;"	c
+main	GenericsAndUpcasting.java	/^	public static void main(String[] args)$/;"	m	class:GenericsAndUpcasting
+GreenhouseController	GreenhouseController.java	/^public class GreenhouseController$/;"	c
+main	GreenhouseController.java	/^	public static void main(String[] args)$/;"	m	class:GreenhouseController
+Immutable	Immutable.java	/^public class Immutable$/;"	c
+main	Immutable.java	/^	public static void main(String[] args)$/;"	m	class:Immutable
+upcase	Immutable.java	/^	public static String upcase(String s)$/;"	m	class:Immutable
+IntegerMatch	IntegerMatch.java	/^public class IntegerMatch$/;"	c
+main	IntegerMatch.java	/^	public static void main(String[] args)$/;"	m	class:IntegerMatch
+InterfaceVsIterator	InterfaceVsInterator.java	/^public class InterfaceVsIterator$/;"	c
+display	InterfaceVsInterator.java	/^	public static void display(Collection<Pet> pets)$/;"	m	class:InterfaceVsIterator
+display	InterfaceVsInterator.java	/^	public static void display(Iterator<Pet> it)$/;"	m	class:InterfaceVsIterator
+main	InterfaceVsInterator.java	/^	public static void main(String[] args)$/;"	m	class:InterfaceVsIterator
+Leaf	Leaf.java	/^public class Leaf$/;"	c
+i	Leaf.java	/^	int i = 0;$/;"	f	class:Leaf
+increment	Leaf.java	/^	Leaf increment()$/;"	m	class:Leaf
+main	Leaf.java	/^	public static void main(String[] args)$/;"	m	class:Leaf
+print	Leaf.java	/^	void print()$/;"	m	class:Leaf
+LibTest	LibTest.java	/^public class LibTest$/;"	c
+main	LibTest.java	/^	public static void main(String[] args)$/;"	m	class:LibTest
+LinkedListFeatures	LinkedListFeatures.java	/^public class LinkedListFeatures$/;"	c
+main	LinkedListFeatures.java	/^	public static void main(String[] args)$/;"	m	class:LinkedListFeatures
+LinkedStack	LinkedStack.java	/^public class LinkedStack<T>$/;"	c
+Node	LinkedStack.java	/^		Node()$/;"	m	class:LinkedStack.Node
+Node	LinkedStack.java	/^		Node(U item,Node<U> next)$/;"	m	class:LinkedStack.Node
+Node	LinkedStack.java	/^	private static class Node<U>$/;"	c	class:LinkedStack
+end	LinkedStack.java	/^		boolean end()$/;"	m	class:LinkedStack.Node
+item	LinkedStack.java	/^		U item;$/;"	f	class:LinkedStack.Node
+main	LinkedStack.java	/^	public static void main(String[] args)$/;"	m	class:LinkedStack
+next	LinkedStack.java	/^		Node<U> next;$/;"	f	class:LinkedStack.Node
+pop	LinkedStack.java	/^	public T pop()$/;"	m	class:LinkedStack
+push	LinkedStack.java	/^	public void push(T item)$/;"	m	class:LinkedStack
+top	LinkedStack.java	/^	private Node<T> top = new Node<T>();$/;"	f	class:LinkedStack	file:
+ListInteration	ListIteration.java	/^public class ListInteration$/;"	c
+main	ListIteration.java	/^	public static void main(String[] args)$/;"	m	class:ListInteration
+MapOfList	MapOfList.java	/^public class MapOfList$/;"	c
+main	MapOfList.java	/^	public static void main(String[] args)$/;"	m	class:MapOfList
+petPeople	MapOfList.java	/^		petPeople = new HashMap<Person,List<? extends Pet>>;$/;"	f	class:MapOfList
+A	MultiNestingAccess.java	/^	class A$/;"	c	class:MNA
+B	MultiNestingAccess.java	/^		public class B$/;"	c	class:MNA.A
+MNA	MultiNestingAccess.java	/^class MNA$/;"	c
+MultiNestingAccess	MultiNestingAccess.java	/^public class MultiNestingAccess$/;"	c
+f	MultiNestingAccess.java	/^	private void f()$/;"	m	class:MNA	file:
+g	MultiNestingAccess.java	/^		private void g()$/;"	m	class:MNA.A	file:
+h	MultiNestingAccess.java	/^			void h()$/;"	m	class:MNA.A.B
+main	MultiNestingAccess.java	/^	public static void main(String[] args)$/;"	m	class:MultiNestingAccess
+Music	Music.java	/^public class Music$/;"	c
+main	Music.java	/^	public static void main(String[] args)$/;"	m	class:Music
+tune	Music.java	/^	public static void tune(Instrument i)$/;"	m	class:Music
+Orc	Orc.java	/^	public Orc(String name,int orcNumber)$/;"	m	class:Orc
+Orc	Orc.java	/^public class Orc extends Villain$/;"	c
+Villain	Orc.java	/^	public Villain(String name)$/;"	m	class:Villain
+Villain	Orc.java	/^class Villain$/;"	c
+change	Orc.java	/^	public void change(String name, int orcNumber)$/;"	m	class:Orc
+main	Orc.java	/^	public static void main(String[] args)$/;"	m	class:Orc
+name	Orc.java	/^	private String name;$/;"	f	class:Villain	file:
+orcNumber	Orc.java	/^	private int orcNumber;$/;"	f	class:Orc	file:
+set	Orc.java	/^	protected void set(String nm)$/;"	m	class:Villain
+toString	Orc.java	/^	public String toString()$/;"	m	class:Orc
+toString	Orc.java	/^	public String toString()$/;"	m	class:Villain
+Overloading	Overloading.java	/^public class Overloading{$/;"	c
+Tree	Overloading.java	/^	Tree()$/;"	m	class:Tree
+Tree	Overloading.java	/^	Tree(int initialHeight)$/;"	m	class:Tree
+Tree	Overloading.java	/^class Tree {$/;"	c
+height	Overloading.java	/^	int height;$/;"	f	class:Tree
+info	Overloading.java	/^	void info()$/;"	m	class:Tree
+info	Overloading.java	/^	void info(String s)$/;"	m	class:Tree
+main	Overloading.java	/^	public static void main(String[] args)$/;"	m	class:Overloading
+Contents	Parcel1.java	/^	class Contents$/;"	c	class:Parcel1
+Destination	Parcel1.java	/^		Destination(String whereTo)$/;"	m	class:Parcel1.Destination
+Destination	Parcel1.java	/^	class Destination$/;"	c	class:Parcel1
+Parcel1	Parcel1.java	/^public class Parcel1$/;"	c
+i	Parcel1.java	/^		private int i = 11;$/;"	f	class:Parcel1.Contents	file:
+label	Parcel1.java	/^		private String label;$/;"	f	class:Parcel1.Destination	file:
+main	Parcel1.java	/^	public static void main(String[] args)$/;"	m	class:Parcel1
+readLabel	Parcel1.java	/^		String readLabel()$/;"	m	class:Parcel1.Destination
+ship	Parcel1.java	/^	public void ship(String dest)$/;"	m	class:Parcel1
+value	Parcel1.java	/^		public int value()$/;"	m	class:Parcel1.Contents
+Contents	Parcel2.java	/^	class Contents$/;"	c	class:Parcel2
+Destination	Parcel2.java	/^		Destination(String whereTo)$/;"	m	class:Parcel2.Destination
+Destination	Parcel2.java	/^	class Destination$/;"	c	class:Parcel2
+Parcel2	Parcel2.java	/^public class Parcel2$/;"	c
+contents	Parcel2.java	/^	public Contents contents()$/;"	m	class:Parcel2
+i	Parcel2.java	/^		private int i = 11;$/;"	f	class:Parcel2.Contents	file:
+label	Parcel2.java	/^		private String label;$/;"	f	class:Parcel2.Destination	file:
+main	Parcel2.java	/^	public static void main(String[] args)$/;"	m	class:Parcel2
+readLabel	Parcel2.java	/^		String readLabel()$/;"	m	class:Parcel2.Destination
+ship	Parcel2.java	/^	public void ship(String dest)$/;"	m	class:Parcel2
+to	Parcel2.java	/^	public Destination to(String s)$/;"	m	class:Parcel2
+value	Parcel2.java	/^		public int value()$/;"	m	class:Parcel2.Contents
+Destination	Parcel5.java	/^interface Destination$/;"	i
+Parcel5	Parcel5.java	/^public class Parcel5$/;"	c
+destination	Parcel5.java	/^	public PDestination destination(String s)$/;"	m	class:Parcel5
+main	Parcel5.java	/^	public static void main(String[] args)$/;"	m	class:Parcel5
+readLable	Parcel5.java	/^	String readLable();$/;"	m	interface:Destination
+Parcel7	Parcel7.java	/^public class Parcel7$/;"	c
+contents	Parcel7.java	/^	public Contents contents()$/;"	m	class:Parcel7
+main	Parcel7.java	/^	public static void main(String[] args)$/;"	m	class:Parcel7
+Parcel8	Parcel8.java	/^public class Parcel8$/;"	c
+Wrapping	Parcel8.java	/^	public Wrapping(int x)$/;"	m	class:Wrapping
+Wrapping	Parcel8.java	/^class Wrapping$/;"	c
+i	Parcel8.java	/^	private int i;$/;"	f	class:Wrapping	file:
+main	Parcel8.java	/^	public static void main(String[] args)$/;"	m	class:Parcel8
+value	Parcel8.java	/^	public int value()$/;"	m	class:Wrapping
+wrapping	Parcel8.java	/^	public Wrapping wrapping(int x)$/;"	m	class:Parcel8
+Apple	PassingThis.java	/^class Apple$/;"	c
+PassingThis	PassingThis.java	/^public class PassingThis$/;"	c
+Peeler	PassingThis.java	/^class Peeler$/;"	c
+Person	PassingThis.java	/^class Person$/;"	c
+eat	PassingThis.java	/^	public void eat(Apple apple)$/;"	m	class:Person
+getPeeled	PassingThis.java	/^	public Apple getPeeled()$/;"	m	class:Apple
+main	PassingThis.java	/^	public static void main(String[] args)$/;"	m	class:PassingThis
+peel	PassingThis.java	/^	public static Apple peel(Apple apple)$/;"	m	class:Peeler
+PetMap	PetMap.java	/^public class PetMap$/;"	c
+main	PetMap.java	/^	public static void main(String[] args)$/;"	m	class:PetMap
+Glyph	PloyConstructors.java	/^	Glyph()$/;"	m	class:Glyph
+Glyph	PloyConstructors.java	/^class Glyph$/;"	c
+PloyConstructors	PloyConstructors.java	/^public class PloyConstructors$/;"	c
+RoundGlyph	PloyConstructors.java	/^	RoundGlyph(int r)$/;"	m	class:RoundGlyph
+RoundGlyph	PloyConstructors.java	/^class RoundGlyph extends Glyph$/;"	c
+draw	PloyConstructors.java	/^	void draw()$/;"	m	class:Glyph
+draw	PloyConstructors.java	/^	void draw()$/;"	m	class:RoundGlyph
+main	PloyConstructors.java	/^	public static void main(String[] args)$/;"	m	class:PloyConstructors
+radius	PloyConstructors.java	/^	private int radius = 1;$/;"	f	class:RoundGlyph	file:
+PrintTest	PrintTest.java	/^public class PrintTest$/;"	c
+main	PrintTest.java	/^	public static void main(String[] args)$/;"	m	class:PrintTest
+PrintingContainers	PrintingContainers.java	/^public class PrintingContainers$/;"	c
+fill	PrintingContainers.java	/^	static Collection fill(Collection<String> collection)$/;"	m	class:PrintingContainers
+fill	PrintingContainers.java	/^	static Map fill(Map<String,String> map)$/;"	m	class:PrintingContainers
+main	PrintingContainers.java	/^	public static void main(String[] args)$/;"	m	class:PrintingContainers
+QualifiedMyclass	QualifiedMyclass.java	/^public class QualifiedMyclass$/;"	c
+main	QualifiedMyclass.java	/^	public static void main(String[] args)$/;"	m	class:QualifiedMyclass
+QueueDemo	QueueDemo.java	/^public class QueueDemo$/;"	c
+main	QueueDemo.java	/^	public static void main(String[] args)$/;"	m	class:QueueDemo
+printQ	QueueDemo.java	/^	public static void printQ(Queue queue)$/;"	m	class:QueueDemo
+Composing	ReferenceCounting.java	/^	public Composing(Shared shared)$/;"	m	class:Composing
+Composing	ReferenceCounting.java	/^class Composing$/;"	c
+ReferenceCounting	ReferenceCounting.java	/^public class ReferenceCounting$/;"	c
+Shared	ReferenceCounting.java	/^	public Shared()$/;"	m	class:Shared
+Shared	ReferenceCounting.java	/^class Shared$/;"	c
+addRef	ReferenceCounting.java	/^	public void addRef()$/;"	m	class:Shared
+counter	ReferenceCounting.java	/^	private static long  counter = 0;$/;"	f	class:Composing	file:
+counter	ReferenceCounting.java	/^	private static long counter = 0;$/;"	f	class:Shared	file:
+dispose	ReferenceCounting.java	/^	protected void dispose()$/;"	m	class:Composing
+dispose	ReferenceCounting.java	/^	protected void dispose()$/;"	m	class:Shared
+id	ReferenceCounting.java	/^	private final long id  = counter++;$/;"	f	class:Composing	file:
+id	ReferenceCounting.java	/^	private final long id = counter++;$/;"	f	class:Shared	file:
+main	ReferenceCounting.java	/^	public static void main(String[] args)$/;"	m	class:ReferenceCounting
+print	ReferenceCounting.java	/^	void print(String s)$/;"	m	class:Composing
+refcount	ReferenceCounting.java	/^	private int refcount = 0;$/;"	f	class:Shared	file:
+shared	ReferenceCounting.java	/^	private Shared shared;$/;"	f	class:Composing	file:
+toString	ReferenceCounting.java	/^	public String toString()$/;"	m	class:Composing
+toString	ReferenceCounting.java	/^	public String toString()$/;"	m	class:Shared
+Selector	Sequence.java	/^interface Selector$/;"	i
+Sequence	Sequence.java	/^	public Sequence(int size)$/;"	m	class:Sequence
+Sequence	Sequence.java	/^public class Sequence$/;"	c
+SequenceSelector	Sequence.java	/^	private class SequenceSelector implements Selector$/;"	c	class:Sequence
+add	Sequence.java	/^	public void add(Object x)$/;"	m	class:Sequence
+current	Sequence.java	/^		public Object current()$/;"	m	class:Sequence.SequenceSelector
+current	Sequence.java	/^	Object current();$/;"	m	interface:Selector
+end	Sequence.java	/^		public boolean end()$/;"	m	class:Sequence.SequenceSelector
+end	Sequence.java	/^	boolean end();$/;"	m	interface:Selector
+i	Sequence.java	/^		private int i = 0;$/;"	f	class:Sequence.SequenceSelector	file:
+items	Sequence.java	/^	private Object[] items;$/;"	f	class:Sequence	file:
+main	Sequence.java	/^	public static void main(String[] args)$/;"	m	class:Sequence
+next	Sequence.java	/^		public void next()$/;"	m	class:Sequence.SequenceSelector
+next	Sequence.java	/^	private int next = 0;$/;"	f	class:Sequence	file:
+next	Sequence.java	/^	void next();$/;"	m	interface:Selector
+selector	Sequence.java	/^	public SequenceSelector selector()$/;"	m	class:Sequence
+SetOfInteger	SetOfInteger.java	/^public class SetOfInteger$/;"	c
+main	SetOfInteger.java	/^	public static void main(String[] args)$/;"	m	class:SetOfInteger
+SetOperations	SetOperations.java	/^public class SetOperations$/;"	c
+main	SetOperations.java	/^	public static void main(String[] args)$/;"	m	class:SetOperations
+Shapes	Shapes.java	/^public class Shapes$/;"	c
+g	Shapes.java	/^	private static RandomShapeGenerator g = new RandomShapeGenerator();$/;"	f	class:Shapes	file:
+main	Shapes.java	/^	public static void main(String[] args)$/;"	m	class:Shapes
+SimpleCollection	SimpleCollection.java	/^public class SimpleCollection$/;"	c
+main	SimpleCollection.java	/^	public static void main(String[] args)$/;"	m	class:SimpleCollection
+Rock	SimpleConstructor.java	/^	Rock(int i)$/;"	m	class:Rock
+Rock	SimpleConstructor.java	/^class Rock{$/;"	c
+SimpleConstructor	SimpleConstructor.java	/^public class SimpleConstructor{$/;"	c
+main	SimpleConstructor.java	/^	public static void main(String[] args)$/;"	m	class:SimpleConstructor
+SimpleFormat	SimpleFormat.java	/^public class SimpleFormat$/;"	c
+main	SimpleFormat.java	/^	public static void main(String[] args)$/;"	m	class:SimpleFormat
+SimpleIteration	SimpleIteration.java	/^public class SimpleIteration$/;"	c
+main	SimpleIteration.java	/^	public static void main(String[] args)$/;"	m	class:SimpleIteration
+SprinklerSystem	SprinklerSystem.java	/^public class SprinklerSystem$/;"	c
+WaterSource	SprinklerSystem.java	/^	WaterSource()$/;"	m	class:WaterSource
+WaterSource	SprinklerSystem.java	/^class WaterSource$/;"	c
+f	SprinklerSystem.java	/^	private float f;$/;"	f	class:SprinklerSystem	file:
+i	SprinklerSystem.java	/^	private int i;$/;"	f	class:SprinklerSystem	file:
+main	SprinklerSystem.java	/^	public static void main(String[] args)$/;"	m	class:SprinklerSystem
+s	SprinklerSystem.java	/^	private String s;$/;"	f	class:WaterSource	file:
+source	SprinklerSystem.java	/^	private WaterSource source = new WaterSource();$/;"	f	class:SprinklerSystem	file:
+toString	SprinklerSystem.java	/^	public String toString()$/;"	m	class:SprinklerSystem
+toString	SprinklerSystem.java	/^	public String toString()$/;"	m	class:WaterSource
+value1	SprinklerSystem.java	/^	private String value1,value2,value3,value4;$/;"	f	class:SprinklerSystem	file:
+value2	SprinklerSystem.java	/^	private String value1,value2,value3,value4;$/;"	f	class:SprinklerSystem	file:
+value3	SprinklerSystem.java	/^	private String value1,value2,value3,value4;$/;"	f	class:SprinklerSystem	file:
+value4	SprinklerSystem.java	/^	private String value1,value2,value3,value4;$/;"	f	class:SprinklerSystem	file:
+Statistics	Statistics.java	/^public class Statistics$/;"	c
+main	Statistics.java	/^	public static void main(String[] args)$/;"	m	class:Statistics
+FancyToy	ToyTest.java	/^	FancyToy()$/;"	m	class:FancyToy
+FancyToy	ToyTest.java	/^class FancyToy extends Toy implements HasBatteries,Waterproof,Shoots$/;"	c
+HasBatteries	ToyTest.java	/^interface HasBatteries {}$/;"	i
+Shoots	ToyTest.java	/^interface Shoots {}$/;"	i
+Toy	ToyTest.java	/^	Toy(){}$/;"	m	class:Toy
+Toy	ToyTest.java	/^	Toy(int i)$/;"	m	class:Toy
+Toy	ToyTest.java	/^class Toy$/;"	c
+ToyTest	ToyTest.java	/^public class ToyTest$/;"	c
+Waterproof	ToyTest.java	/^interface Waterproof {}$/;"	i
+main	ToyTest.java	/^	public static void main(String[] args)$/;"	m	class:ToyTest
+printInfo	ToyTest.java	/^	static void printInfo(Class cc)$/;"	m	class:ToyTest
+Actor	Transmogrify.java	/^class Actor$/;"	c
+HappyActor	Transmogrify.java	/^class HappyActor extends Actor$/;"	c
+SadActor	Transmogrify.java	/^class SadActor extends Actor$/;"	c
+Stage	Transmogrify.java	/^class Stage$/;"	c
+Transmogrify	Transmogrify.java	/^public class Transmogrify$/;"	c
+act	Transmogrify.java	/^	public void act() {}$/;"	m	class:Actor
+act	Transmogrify.java	/^	public void act()$/;"	m	class:HappyActor
+act	Transmogrify.java	/^	public void act()$/;"	m	class:SadActor
+actor	Transmogrify.java	/^	private Actor actor = new HappyActor();$/;"	f	class:Stage	file:
+change	Transmogrify.java	/^	public void change()$/;"	m	class:Stage
+main	Transmogrify.java	/^	public static void main(String[] args)$/;"	m	class:Transmogrify
+performPlay	Transmogrify.java	/^	public void performPlay()$/;"	m	class:Stage
+Turtle	Turtle.java	/^	public Turtle(String name,Formatter f)$/;"	m	class:Turtle
+Turtle	Turtle.java	/^public class Turtle$/;"	c
+f	Turtle.java	/^	private Formatter f;$/;"	f	class:Turtle	file:
+main	Turtle.java	/^	public static void main(String[] args)$/;"	m	class:Turtle
+move	Turtle.java	/^	public void move(int x,int y)$/;"	m	class:Turtle
+name	Turtle.java	/^	private String name;$/;"	f	class:Turtle	file:
+helloworld	helloworld.java	/^public class helloworld{$/;"	c
+main	helloworld.java	/^	public static void main(String[] args)$/;"	m	class:helloworld
+Controller	mypackage\Controller.java	/^public class Controller$/;"	c
+addEvent	mypackage\Controller.java	/^	public void addEvent(Event v)$/;"	m	class:Controller
+eventList	mypackage\Controller.java	/^	private List<Event> eventList = new ArrayList<Event>();$/;"	f	class:Controller	file:
+mypackage	mypackage\Controller.java	/^package mypackage;$/;"	p
+run	mypackage\Controller.java	/^	public void run()$/;"	m	class:Controller
+Cookie	mypackage\Cookie.java	/^	public Cookie()$/;"	m	class:Cookie
+Cookie	mypackage\Cookie.java	/^public class Cookie$/;"	c
+bite	mypackage\Cookie.java	/^	void bite()$/;"	m	class:Cookie
+mypackage	mypackage\Cookie.java	/^package mypackage;$/;"	p
+Event	mypackage\Event.java	/^	public Event(long delayTime)$/;"	m	class:Event
+Event	mypackage\Event.java	/^public abstract class Event$/;"	c
+action	mypackage\Event.java	/^	public abstract void action();$/;"	m	class:Event
+delayTime	mypackage\Event.java	/^	protected final long delayTime;$/;"	f	class:Event
+eventTime	mypackage\Event.java	/^	private long eventTime;$/;"	f	class:Event	file:
+mypackage	mypackage\Event.java	/^package mypackage;$/;"	p
+start	mypackage\Event.java	/^	public void start()$/;"	m	class:Event
+Bell	mypackage\GreenhouseControllers.java	/^		public Bell(long delayTime)$/;"	m	class:GreenhouseControllers.Bell
+Bell	mypackage\GreenhouseControllers.java	/^	public class Bell extends Event$/;"	c	class:GreenhouseControllers
+GreenhouseControllers	mypackage\GreenhouseControllers.java	/^public class GreenhouseControllers extends Controller$/;"	c
+LightOff	mypackage\GreenhouseControllers.java	/^		public LightOff(long delayTime)$/;"	m	class:GreenhouseControllers.LightOff
+LightOff	mypackage\GreenhouseControllers.java	/^	public class LightOff extends Event$/;"	c	class:GreenhouseControllers
+LightOn	mypackage\GreenhouseControllers.java	/^		public LightOn(long delayTime)$/;"	m	class:GreenhouseControllers.LightOn
+LightOn	mypackage\GreenhouseControllers.java	/^	public class LightOn extends Event$/;"	c	class:GreenhouseControllers
+Restart	mypackage\GreenhouseControllers.java	/^		public Restart(long delayTime,Event[] eventList)$/;"	m	class:GreenhouseControllers.Restart
+Restart	mypackage\GreenhouseControllers.java	/^	public class Restart extends Event$/;"	c	class:GreenhouseControllers
+Terminate	mypackage\GreenhouseControllers.java	/^		public Terminate(long delayTime)$/;"	m	class:GreenhouseControllers.Terminate
+Terminate	mypackage\GreenhouseControllers.java	/^	public static class Terminate extends Event$/;"	c	class:GreenhouseControllers
+ThermostatDay	mypackage\GreenhouseControllers.java	/^		public ThermostatDay(long delayTime)$/;"	m	class:GreenhouseControllers.ThermostatDay
+ThermostatDay	mypackage\GreenhouseControllers.java	/^	public class ThermostatDay extends Event$/;"	c	class:GreenhouseControllers
+ThermostatNight	mypackage\GreenhouseControllers.java	/^		public ThermostatNight(long delayTime)$/;"	m	class:GreenhouseControllers.ThermostatNight
+ThermostatNight	mypackage\GreenhouseControllers.java	/^	public class ThermostatNight extends Event$/;"	c	class:GreenhouseControllers
+WaterOff	mypackage\GreenhouseControllers.java	/^		public WaterOff(long delayTime)$/;"	m	class:GreenhouseControllers.WaterOff
+WaterOff	mypackage\GreenhouseControllers.java	/^	public class WaterOff extends Event$/;"	c	class:GreenhouseControllers
+WaterOn	mypackage\GreenhouseControllers.java	/^		public WaterOn(long delayTime)$/;"	m	class:GreenhouseControllers.WaterOn
+WaterOn	mypackage\GreenhouseControllers.java	/^	public class WaterOn extends Event$/;"	c	class:GreenhouseControllers
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.Bell
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.LightOff
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.LightOn
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.Restart
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.Terminate
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.ThermostatDay
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.ThermostatNight
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.WaterOff
+action	mypackage\GreenhouseControllers.java	/^		public void action()$/;"	m	class:GreenhouseControllers.WaterOn
+eventList	mypackage\GreenhouseControllers.java	/^		private Event[] eventList;$/;"	f	class:GreenhouseControllers.Restart	file:
+light	mypackage\GreenhouseControllers.java	/^	private boolean light = false;$/;"	f	class:GreenhouseControllers	file:
+mypackage	mypackage\GreenhouseControllers.java	/^package mypackage;$/;"	p
+thermostat	mypackage\GreenhouseControllers.java	/^	private String thermostat = "day";$/;"	f	class:GreenhouseControllers	file:
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.Bell
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.LightOff
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.LightOn
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.Restart
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.Terminate
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.ThermostatDay
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.ThermostatNight
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.WaterOff
+toString	mypackage\GreenhouseControllers.java	/^		public String toString()$/;"	m	class:GreenhouseControllers.WaterOn
+water	mypackage\GreenhouseControllers.java	/^	private boolean water = false;$/;"	f	class:GreenhouseControllers	file:
+Myclass	mypackage\Myclass.java	/^	public Myclass()$/;"	m	class:Myclass
+Myclass	mypackage\Myclass.java	/^public class Myclass$/;"	c
+mypackage	mypackage\Myclass.java	/^package mypackage;$/;"	p
+Print	mypackage\Print.java	/^public class Print$/;"	c
+mypackage	mypackage\Print.java	/^package mypackage;$/;"	p
+print	mypackage\Print.java	/^	public static void print()$/;"	m	class:Print
+print	mypackage\Print.java	/^	public static void print(Object obj)$/;"	m	class:Print
+printnb	mypackage\Print.java	/^	public static void printnb(Object obj)$/;"	m	class:Print
+List	net\mindview\simple\List.java	/^	public List()$/;"	m	class:List
+List	net\mindview\simple\List.java	/^public class List$/;"	c
+net.mindview.simple	net\mindview\simple\List.java	/^package net.mindview.simple;$/;"	p
+Vector	net\mindview\simple\Vector.java	/^	public Vector()$/;"	m	class:Vector
+Vector	net\mindview\simple\Vector.java	/^public class Vector$/;"	c
+net.mindview.simple	net\mindview\simple\Vector.java	/^package net.mindview.simple;$/;"	p
+Print	net\mindview\util\Print.java	/^public class Print$/;"	c
+net.mindview.util	net\mindview\util\Print.java	/^package net.mindview.util;$/;"	p
+print	net\mindview\util\Print.java	/^	public static void print()$/;"	m	class:Print
+print	net\mindview\util\Print.java	/^	public static void print(Object obj)$/;"	m	class:Print
+printnb	net\mindview\util\Print.java	/^	public static void printnb(Object obj)$/;"	m	class:Print
+Circle	ploymorphism\Circle.java	/^public class Circle extends Shape$/;"	c
+draw	ploymorphism\Circle.java	/^	public void draw()$/;"	m	class:Circle
+erase	ploymorphism\Circle.java	/^	public void erase()$/;"	m	class:Circle
+ploymorphism	ploymorphism\Circle.java	/^package ploymorphism;$/;"	p
+Instrument	ploymorphism\Instrument.java	/^public class Instrument$/;"	c
+play	ploymorphism\Instrument.java	/^	public void play(Note n)$/;"	m	class:Instrument
+ploymorphism	ploymorphism\Instrument.java	/^package ploymorphism;$/;"	p
+B_FLAT	ploymorphism\Note.java	/^	B_FLAT;$/;"	e	enum:Note	file:
+C_SHARP	ploymorphism\Note.java	/^	C_SHARP,$/;"	e	enum:Note	file:
+MIDDLE_C	ploymorphism\Note.java	/^	MIDDLE_C,$/;"	e	enum:Note	file:
+Note	ploymorphism\Note.java	/^public enum Note$/;"	g
+ploymorphism	ploymorphism\Note.java	/^package ploymorphism;$/;"	p
+RandomShapeGenerator	ploymorphism\RandomShapeGenerator.java	/^public class RandomShapeGenerator$/;"	c
+next	ploymorphism\RandomShapeGenerator.java	/^	public Shape next()$/;"	m	class:RandomShapeGenerator
+ploymorphism	ploymorphism\RandomShapeGenerator.java	/^package ploymorphism;$/;"	p
+r	ploymorphism\RandomShapeGenerator.java	/^	private Random r = new Random(47);$/;"	f	class:RandomShapeGenerator	file:
+Shape	ploymorphism\Shape.java	/^public class Shape$/;"	c
+draw	ploymorphism\Shape.java	/^	public void draw() {};$/;"	m	class:Shape
+erase	ploymorphism\Shape.java	/^	public void erase() {};$/;"	m	class:Shape
+ploymorphism	ploymorphism\Shape.java	/^package ploymorphism;$/;"	p
+Square	ploymorphism\Square.java	/^public class Square extends Shape$/;"	c
+draw	ploymorphism\Square.java	/^	public void draw()$/;"	m	class:Square
+erase	ploymorphism\Square.java	/^	public void erase()$/;"	m	class:Square
+ploymorphism	ploymorphism\Square.java	/^package ploymorphism;$/;"	p
+Triangle	ploymorphism\Triangle.java	/^public class Triangle extends Shape$/;"	c
+draw	ploymorphism\Triangle.java	/^	public void draw()$/;"	m	class:Triangle
+erase	ploymorphism\Triangle.java	/^	public void erase()$/;"	m	class:Triangle
+ploymorphism	ploymorphism\Triangle.java	/^package ploymorphism;$/;"	p
+Wind	ploymorphism\Wind.java	/^public class Wind extends Instrument$/;"	c
+play	ploymorphism\Wind.java	/^	public void play(Note n)$/;"	m	class:Wind
+ploymorphism	ploymorphism\Wind.java	/^package ploymorphism;$/;"	p
+BaseGun	test\Make.java	/^class BaseGun$/;"	c
+HanGun	test\Make.java	/^class HanGun extends BaseGun$/;"	c
+Make	test\Make.java	/^public class Make $/;"	c
+RifleGun	test\Make.java	/^class RifleGun extends BaseGun$/;"	c
+Soldier	test\Make.java	/^	Soldier(BaseGun gun)$/;"	m	class:Soldier
+Soldier	test\Make.java	/^class Soldier$/;"	c
+gun	test\Make.java	/^	private BaseGun gun;$/;"	f	class:Soldier	file:
+gunZoom	test\Make.java	/^	public void gunZoom()$/;"	m	class:BaseGun
+gunZoom	test\Make.java	/^	public void gunZoom()$/;"	m	class:HanGun
+gunZoom	test\Make.java	/^	public void gunZoom()$/;"	m	class:RifleGun
+main	test\Make.java	/^	public static void main(String[] args)$/;"	m	class:Make
+startShoot	test\Make.java	/^	public void startShoot()$/;"	m	class:Soldier
+List	test\net\mindview\simple\List.java	/^	public List()$/;"	m	class:List
+List	test\net\mindview\simple\List.java	/^public class List$/;"	c
+net.mindview.simple	test\net\mindview\simple\List.java	/^package net.mindview.simple;$/;"	p
+Vector	test\net\mindview\simple\Vector.java	/^	public Vector()$/;"	m	class:Vector
+Vector	test\net\mindview\simple\Vector.java	/^public class Vector$/;"	c
+net.mindview.simple	test\net\mindview\simple\Vector.java	/^package net.mindview.simple;$/;"	p
+main	test\test.java	/^	public static void main(String[] args)$/;"	m	class:test
+test	test\test.java	/^public class test$/;"	c
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

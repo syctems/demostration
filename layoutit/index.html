@@ -1035,7 +1035,27 @@
                     <ul class="nav nav-list accordion-group">
                         <li class="nav-header"><i class="icon-plus icon-white"></i> 应用扩展</li>
                         <li style="display: none;" class="boxes mute" id="elmComm">
-                            <div class="preview">建设中...</div>
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">手风琴切换</div>
+                                <div class="view">
+                                    <div class="accordion" id="myAccordion">
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#myAccordion" href="#collapseOne" contenteditable="true"> 选项卡 #1 </a> 
+                                            </div>
+                                            <div id="collapseOne" class="accordion-body collapse in">
+                                                <div class="accordion-inner" contenteditable="true">功能块...</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#myAccordion" href="#collapseTwo" contenteditable="true"> 选项卡 #2 </a> 
+                                            </div>
+                                            <div id="collapseTwo" class="accordion-body collapse">
+                                                <div class="accordion-inner" contenteditable="true">功能块...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </li>
                     </ul>
                 </div>

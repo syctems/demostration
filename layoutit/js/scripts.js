@@ -236,6 +236,9 @@ function changeStructure(e, t) {
 function cleanHtml(e) {
 	$(e).parent().append($(e).children().html())
 }
+function cleanHtmlChart(e) {
+	$(e).children().remove();
+}
 function downloadLayoutSrc() {
 	var e = "";
 	$("#download-layout").children().html($(".demo").html());
@@ -261,30 +264,36 @@ function downloadLayoutSrc() {
 	t.find(".removeClean").each(function() {
 		cleanHtml(this)
 	});
+	t.find(".chart").each(function() {
+		cleanHtmlChart(this)
+	});
 	t.find(".removeClean").remove();
 	$("#download-layout .column").removeClass("ui-sortable");
 	$("#download-layout .row-fluid").removeClass("clearfix").children().removeClass("column");
 	if ($("#download-layout .container").length > 0) {
 		changeStructure("row-fluid", "row")
 	}
-	formatSrc = $.htmlClean($("#download-layout").html(), {
-		format: true,
-		allowedAttributes: [
-			["id"],
-			["class"],
-			["data-toggle"],
-			["data-target"],
-			["data-parent"],
-			["role"],
-			["data-dismiss"],
-			["aria-labelledby"],
-			["aria-hidden"],
-			["data-slide-to"],
-			["data-slide"]
-		]
-	});
+
+	// formatSrc = $.htmlClean($("#download-layout").html(), {
+	// 	format: true,
+	// 	allowedAttributes: [
+	// 		["id"],
+	// 		["class"],
+	// 		["data-toggle"],
+	// 		["data-target"],
+	// 		["data-parent"],
+	// 		["role"],
+	// 		["data-dismiss"],
+	// 		["aria-labelledby"],
+	// 		["aria-hidden"],
+	// 		["data-slide-to"],
+	// 		["data-slide"]
+	// 	]
+	// });
+	formatSrc = $("#download-layout").html();
 	$("#download-layout").html(formatSrc);
 	$("#downloadModal textarea").empty();
+	//console.log(formatSrc);
 	$("#downloadModal textarea").val(formatSrc)
 }
 

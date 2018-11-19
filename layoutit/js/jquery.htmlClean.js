@@ -403,7 +403,6 @@ Use and distibution http://www.opensource.org/licenses/bsd-license.php
     function Attribute(name, value) {
         this.name = name;
         this.value = value;
-
         return this;
     }
 

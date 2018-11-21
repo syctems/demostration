@@ -237,8 +237,25 @@ function cleanHtml(e) {
 	$(e).parent().append($(e).children().html())
 }
 function cleanHtmlChart(e) {
-	$(e).children().remove();
+	var oldChartId =  $(e).context.id;
+	var newChart = $(e).context.id + Math.ceil(Math.random()*350);
+	$(e).attr('id',newChart).removeAttr("data-highcharts-chart").children().remove();
+	var olds = $(e).context.nextElementSibling.innerText;
+	var news = trim(replace(olds,oldChartId,newChart));
+	$(e).context.nextElementSibling.innerText = news;
 }
+
+function replace(str, before, after) {
+    var reg = new RegExp(before, "g");
+    return str.replace(reg, after);
+}
+
+function trim(s){
+    return s.replace(/(^\s*)|(\s*$)/g, "");
+}
+
+
+
 function downloadLayoutSrc() {
 	var e = "";
 	$("#download-layout").children().html($(".demo").html());

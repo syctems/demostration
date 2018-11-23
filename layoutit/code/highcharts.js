@@ -5134,6 +5134,8 @@
 				this.getChartSize();
 				f = this.chartWidth;
 				m = this.chartHeight;
+				
+
 				k = r({
 					position: "relative",
 					overflow: "hidden",

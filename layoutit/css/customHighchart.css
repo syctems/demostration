@@ -1,22 +1,43 @@
 #lineBasic {
-	min-width: 1380px;
+	min-width: 380px;
+	max-width: 800px;
+
 	height: 400px;
 	margin: 0 auto
 }
 #columnBasic {
-	min-width: 380px;
+	min-width: 420px;
 	max-width: 800px;
 	height: 380px;
 	margin: 0 auto
 }
 #pieBasic {
-	min-width: 380px;
+	min-width: 420px;
 	max-width: 800px;
 	height: 400px;
 	margin: 0 auto
 }
 #splineBasic {
-	min-width: 380px;
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#areaBasic {
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#temperatureBasic {
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+
+#areaStackedBasic {
+	min-width: 420px;
 	max-width: 800px;
 	height: 400px;
 	margin: 0 auto

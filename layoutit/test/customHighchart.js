@@ -520,7 +520,573 @@ CustomHighchart.prototype.getAreaStackedChart = function(name,option){
     Highcharts.chart(name, data);
 }
 
-CustomHighchart.prototype.getLineBoostChart = function(name,option)
+CustomHighchart.prototype.getAreaInvertedChart = function(name,option)
 {
+        var init = {  
+                chart: {
+                    type: 'area',
+                    inverted: true
+                },
+                title: {
+                    text: 'Average fruit consumption during one week'
+                },
+                subtitle: {
+                    style: {
+                        position: 'absolute',
+                        right: '0px',
+                        bottom: '10px'
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'top',
+                    x: -150,
+                    y: 100,
+                    floating: true,
+                    borderWidth: 1,
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+                },
+                xAxis: {
+                    categories: [
+                        'Monday',
+                        'Tuesday',
+                        'Wednesday',
+                        'Thursday',
+                        'Friday',
+                        'Saturday',
+                        'Sunday'
+                    ]
+                },
+                yAxis: {
+                    title: {
+                        text: 'Number of units'
+                    },
+                    allowDecimals: false,
+                    min: 0
+                },
+                plotOptions: {
+                    area: {
+                        fillOpacity: 0.5
+                    }
+                },
+                series: [{
+                    name: 'John',
+                    data: [3, 4, 3, 5, 4, 10, 12]
+                }, {
+                    name: 'Jane',
+                    data: [1, 3, 4, 3, 3, 5, 4]
+                }]
+        };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
 
+CustomHighchart.prototype.getAreaMissingChart = function(name,option)
+{
+        var init = {  
+                chart: {
+                    type: 'area',
+                    spacingBottom: 30
+                },
+                title: {
+                    text: 'Fruit consumption *'
+                },
+                subtitle: {
+                    text: '* Jane\'s banana consumption is unknown',
+                    floating: true,
+                    align: 'right',
+                    verticalAlign: 'bottom',
+                    y: 15
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    verticalAlign: 'top',
+                    x: 100,
+                    y: 70,
+                    floating: true,
+                    borderWidth: 1,
+                    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+                },
+                xAxis: {
+                    categories: ['Apples', 'Pears', 'Oranges', 'Bananas', 'Grapes', 'Plums', 'Strawberries', 'Raspberries']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Y-Axis'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value;
+                        }
+                    }
+                },
+                tooltip: {
+                    formatter: function () {
+                        return '<b>' + this.series.name + '</b><br/>' +
+                            this.x + ': ' + this.y;
+                    }
+                },
+                plotOptions: {
+                    area: {
+                        fillOpacity: 0.5
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'John',
+                    data: [0, 1, 4, 4, 5, 2, 3, 7]
+                }, {
+                    name: 'Jane',
+                    data: [1, 0, 3, null, 3, 1, 2, 1]
+                }]
+        };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getBarChart = function(name,option)
+{
+        var init = {  
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: 'Historic World Population by Region'
+                },
+                subtitle: {
+                    text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+                },
+                xAxis: {
+                    categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+                    title: {
+                        text: null
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Population (millions)',
+                        align: 'high'
+                    },
+                    labels: {
+                        overflow: 'justify'
+                    }
+                },
+                tooltip: {
+                    valueSuffix: ' millions'
+                },
+                plotOptions: {
+                    bar: {
+                        dataLabels: {
+                            enabled: true
+                        }
+                    }
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'top',
+                    x: -40,
+                    y: 80,
+                    floating: true,
+                    borderWidth: 1,
+                    backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                    shadow: true
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'Year 1800',
+                    data: [107, 31, 635, 203, 2]
+                }, {
+                    name: 'Year 1900',
+                    data: [133, 156, 947, 408, 6]
+                }, {
+                    name: 'Year 2000',
+                    data: [814, 841, 3714, 727, 31]
+                }, {
+                    name: 'Year 2016',
+                    data: [1216, 1001, 4436, 738, 40]
+                }]
+        };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getBarNegativeStackChart = function(name,option)
+{
+    var categories = [
+        '0-4', '5-9', '10-14', '15-19',
+        '20-24', '25-29', '30-34', '35-39', '40-44',
+        '45-49', '50-54', '55-59', '60-64', '65-69',
+        '70-74', '75-79', '80-84', '85-89', '90-94',
+        '95-99', '100 + '
+    ];
+    var init = {  
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Population pyramid for Germany, 2018'
+            },
+            subtitle: {
+                text: 'Source: <a href="http://populationpyramid.net/germany/2018/">Population Pyramids of the World from 1950 to 2100</a>'
+            },
+            xAxis: [{
+                categories: categories,
+                reversed: false,
+                labels: {
+                    step: 1
+                }
+            }, { // mirror axis on right side
+                opposite: true,
+                reversed: false,
+                categories: categories,
+                linkedTo: 0,
+                labels: {
+                    step: 1
+                }
+            }],
+            yAxis: {
+                title: {
+                    text: null
+                },
+                labels: {
+                    formatter: function () {
+                        return Math.abs(this.value) + '%';
+                    }
+                }
+            },
+
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.name + ', age ' + this.point.category + '</b><br/>' +
+                        'Population: ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+                }
+            },
+
+            series: [{
+                name: 'Male',
+                data: [
+                    -2.2, -2.1, -2.2, -2.4,
+                    -2.7, -3.0, -3.3, -3.2,
+                    -2.9, -3.5, -4.4, -4.1,
+                    -3.4, -2.7, -2.3, -2.2,
+                    -1.6, -0.6, -0.3, -0.0,
+                    -0.0
+                ]
+            }, {
+                name: 'Female',
+                data: [
+                    2.1, 2.0, 2.1, 2.3, 2.6,
+                    2.9, 3.2, 3.1, 2.9, 3.4,
+                    4.3, 4.0, 3.5, 2.9, 2.5,
+                    2.7, 2.2, 1.1, 0.6, 0.2,
+                    0.0
+                ]
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getBarStackChart = function(name,option)
+{
+    var init = {  
+          chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Stacked bar chart'
+            },
+            xAxis: {
+                categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Total fruit consumption'
+                }
+            },
+            legend: {
+                reversed: true
+            },
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+            series: [{
+                name: 'John',
+                data: [5, 3, 4, 7, 2]
+            }, {
+                name: 'Jane',
+                data: [2, 2, 3, 2, 1]
+            }, {
+                name: 'Joe',
+                data: [3, 4, 4, 2, 5]
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getBellcurveChart = function(name,option)
+{
+    var init = {  
+            title: {
+                text: 'Bell curve'
+            },
+
+            xAxis: [{
+                title: {
+                    text: 'Data'
+                },
+                alignTicks: false
+            }, {
+                title: {
+                    text: 'Bell curve'
+                },
+                alignTicks: false,
+                opposite: true
+            }],
+
+            yAxis: [{
+                title: { text: 'Data' }
+            }, {
+                title: { text: 'Bell curve' },
+                opposite: true
+            }],
+
+            series: [{
+                name: 'Bell curve',
+                type: 'bellcurve',
+                xAxis: 1,
+                yAxis: 1,
+                baseSeries: 1,
+                zIndex: -1
+            }, {
+                name: 'Data',
+                type: 'scatter',
+                data: [3.5, 3, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.4, 3, 3, 4,
+            4.4, 3.9, 3.5, 3.8, 3.8, 3.4, 3.7, 3.6, 3.3, 3.4, 3, 3.4, 3.5, 3.4, 3.2,
+            3.1, 3.4, 4.1, 4.2, 3.1, 3.2, 3.5, 3.6, 3, 3.4, 3.5, 2.3, 3.2, 3.5, 3.8, 3,
+            3.8, 3.2, 3.7, 3.3, 3.2, 3.2, 3.1, 2.3, 2.8, 2.8, 3.3, 2.4, 2.9, 2.7, 2, 3,
+            2.2, 2.9, 2.9, 3.1, 3, 2.7, 2.2, 2.5, 3.2, 2.8, 2.5, 2.8, 2.9, 3, 2.8, 3,
+            2.9, 2.6, 2.4, 2.4, 2.7, 2.7, 3, 3.4, 3.1, 2.3, 3, 2.5, 2.6, 3, 2.6, 2.3,
+            2.7, 3, 2.9, 2.9, 2.5, 2.8, 3.3, 2.7, 3, 2.9, 3, 3, 2.5, 2.9, 2.5, 3.6,
+            3.2, 2.7, 3, 2.5, 2.8, 3.2, 3, 3.8, 2.6, 2.2, 3.2, 2.8, 2.8, 2.7, 3.3, 3.2,
+            2.8, 3, 2.8, 3, 2.8, 3.8, 2.8, 2.8, 2.6, 3, 3.4, 3.1, 3, 3.1, 3.1, 3.1, 2.7,
+            3.2, 3.3, 3, 2.5, 3, 3.4, 3],
+                marker: {
+                    radius: 1.5
+                }
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getBoxplotChart = function(name,option)
+{
+    var init = {  
+            chart: {
+                type: 'boxplot'
+            },
+
+            title: {
+                text: 'Highcharts Box Plot Example'
+            },
+
+            legend: {
+                enabled: false
+            },
+
+            xAxis: {
+                categories: ['1', '2', '3', '4', '5'],
+                title: {
+                    text: 'Experiment No.'
+                }
+            },
+
+            yAxis: {
+                title: {
+                    text: 'Observations'
+                },
+                plotLines: [{
+                    value: 932,
+                    color: 'red',
+                    width: 1,
+                    label: {
+                        text: 'Theoretical mean: 932',
+                        align: 'center',
+                        style: {
+                            color: 'gray'
+                        }
+                    }
+                }]
+            },
+
+            series: [{
+                name: 'Observations',
+                data: [
+                    [760, 801, 848, 895, 965],
+                    [733, 853, 939, 980, 1080],
+                    [714, 762, 817, 870, 918],
+                    [724, 802, 806, 871, 950],
+                    [834, 836, 864, 882, 910]
+                ],
+                tooltip: {
+                    headerFormat: '<em>Experiment No {point.key}</em><br/>'
+                }
+            }, {
+                name: 'Outlier',
+                color: Highcharts.getOptions().colors[0],
+                type: 'scatter',
+                data: [ // x, y positions where 0 is the first category
+                    [0, 644],
+                    [4, 718],
+                    [4, 951],
+                    [4, 969]
+                ],
+                marker: {
+                    fillColor: 'white',
+                    lineWidth: 1,
+                    lineColor: Highcharts.getOptions().colors[0]
+                },
+                tooltip: {
+                    pointFormat: 'Observation: {point.y}'
+                }
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getBubbleChart = function(name,option)
+{
+    var init = {  
+            chart: {
+                    type: 'bubble',
+                    plotBorderWidth: 1,
+                    zoomType: 'xy'
+                },
+
+                legend: {
+                    enabled: false
+                },
+
+                title: {
+                    text: 'Sugar and fat intake per country'
+                },
+
+                subtitle: {
+                    text: 'Source: <a href="http://www.euromonitor.com/">Euromonitor</a> and <a href="https://data.oecd.org/">OECD</a>'
+                },
+
+                xAxis: {
+                    gridLineWidth: 1,
+                    title: {
+                        text: 'Daily fat intake'
+                    },
+                    labels: {
+                        format: '{value} gr'
+                    },
+                    plotLines: [{
+                        color: 'black',
+                        dashStyle: 'dot',
+                        width: 2,
+                        value: 65,
+                        label: {
+                            rotation: 0,
+                            y: 15,
+                            style: {
+                                fontStyle: 'italic'
+                            },
+                            text: 'Safe fat intake 65g/day'
+                        },
+                        zIndex: 3
+                    }]
+                },
+
+                yAxis: {
+                    startOnTick: false,
+                    endOnTick: false,
+                    title: {
+                        text: 'Daily sugar intake'
+                    },
+                    labels: {
+                        format: '{value} gr'
+                    },
+                    maxPadding: 0.2,
+                    plotLines: [{
+                        color: 'black',
+                        dashStyle: 'dot',
+                        width: 2,
+                        value: 50,
+                        label: {
+                            align: 'right',
+                            style: {
+                                fontStyle: 'italic'
+                            },
+                            text: 'Safe sugar intake 50g/day',
+                            x: -10
+                        },
+                        zIndex: 3
+                    }]
+                },
+
+                tooltip: {
+                    useHTML: true,
+                    headerFormat: '<table>',
+                    pointFormat: '<tr><th colspan="2"><h3>{point.country}</h3></th></tr>' +
+                        '<tr><th>Fat intake:</th><td>{point.x}g</td></tr>' +
+                        '<tr><th>Sugar intake:</th><td>{point.y}g</td></tr>' +
+                        '<tr><th>Obesity (adults):</th><td>{point.z}%</td></tr>',
+                    footerFormat: '</table>',
+                    followPointer: true
+                },
+
+                plotOptions: {
+                    series: {
+                        dataLabels: {
+                            enabled: true,
+                            format: '{point.name}'
+                        }
+                    }
+                },
+
+                series: [{
+                    data: [
+                        { x: 95, y: 95, z: 13.8, name: 'BE', country: 'Belgium' },
+                        { x: 86.5, y: 102.9, z: 14.7, name: 'DE', country: 'Germany' },
+                        { x: 80.8, y: 91.5, z: 15.8, name: 'FI', country: 'Finland' },
+                        { x: 80.4, y: 102.5, z: 12, name: 'NL', country: 'Netherlands' },
+                        { x: 80.3, y: 86.1, z: 11.8, name: 'SE', country: 'Sweden' },
+                        { x: 78.4, y: 70.1, z: 16.6, name: 'ES', country: 'Spain' },
+                        { x: 74.2, y: 68.5, z: 14.5, name: 'FR', country: 'France' },
+                        { x: 73.5, y: 83.1, z: 10, name: 'NO', country: 'Norway' },
+                        { x: 71, y: 93.2, z: 24.7, name: 'UK', country: 'United Kingdom' },
+                        { x: 69.2, y: 57.6, z: 10.4, name: 'IT', country: 'Italy' },
+                        { x: 68.6, y: 20, z: 16, name: 'RU', country: 'Russia' },
+                        { x: 65.5, y: 126.4, z: 35.3, name: 'US', country: 'United States' },
+                        { x: 65.4, y: 50.8, z: 28.5, name: 'HU', country: 'Hungary' },
+                        { x: 63.4, y: 51.8, z: 15.4, name: 'PT', country: 'Portugal' },
+                        { x: 64, y: 82.9, z: 31.3, name: 'NZ', country: 'New Zealand' }
+                    ]
+                }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
 }

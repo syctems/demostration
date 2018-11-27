@@ -42,3 +42,53 @@
 	height: 400px;
 	margin: 0 auto
 }
+#areaInvertedBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#areaMissingBasic{
+		min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#barBasic{
+		min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#barNegativeStackBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+
+#barStackBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+
+#BellcurveBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#boxplotBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#BubbleBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}

@@ -92,3 +92,72 @@
 	height: 400px;
 	margin: 0 auto
 }
+#drilldownColumnBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#negativeColumnBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#placementColumnBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#rangeColumnBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#comboDualAxesBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#comboBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#columnStackedBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+
+#columnStackGroupedBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+#columnStackedPercentBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+
+#comboBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+
+#comboDualAxesBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}

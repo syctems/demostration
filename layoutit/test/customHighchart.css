@@ -92,3 +92,27 @@
 	height: 400px;
 	margin: 0 auto
 }
+#drilldownColumn{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#negativeColumn{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#PlacementColumn{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}
+#rangeColumn{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}

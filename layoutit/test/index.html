@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
         <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <script src="./jquery-1.11.3.min.js"></script>
         <script src="./bootstrap/js/bootstrap.min.js"></script>
@@ -12,14 +13,31 @@
         <script src="./customHighchart.js"></script>
         <script src="./highcharts-more.js"></script>
         <script src="./histogram-bellcurve.js"></script>
+        <script src="./drilldown.js"></script>
     </head>
     <body>      
-                <div class="container-fluid">            
+
+                <div class="container-fluid">
                                     <div class="row-fluid">
                                         <div class="span12">
                                         <div class="span12 column">
-                                            <div id="lineBasic295" class="col-md-12 chart"></div>
-                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getLineChart('lineBasic295',{});</script>
+                                            <div id="BellcurveBasic274" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getBellcurveChart('BellcurveBasic274',{});</script>
+                                        </div>
+                                </div>
+                                    </div>
+                                
+                                    <div class="row-fluid">
+                                        <div class="span6">
+                                        <div class="span12 column">
+                                            <div id="lineBasic1" class="col-md-12 chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getLineChart('lineBasic1',{});</script>
+                                        </div>
+                                </div>
+                                        <div class="span6">
+                                        <div class="span12 column">
+                                            <div id="splineBasic108" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getSplineChart('splineBasic108',{});</script>
                                         </div>
                                 </div>
                                     </div>
@@ -27,20 +45,20 @@
                                     <div class="row-fluid">
                                         <div class="span4">
                                         <div class="span12 column">
-                                            <div id="pieBasic153" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getPieChart('pieBasic153',{});</script>
+                                            <div id="pieBasic118" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getPieChart('pieBasic118',{});</script>
                                         </div>
                                 </div>
                                         <div class="span4">
                                         <div class="span12 column">
-                                            <div id="BellcurveBasic138" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getBellcurveChart('BellcurveBasic138',{});</script>
+                                            <div id="columnBasic163" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getColumnChart('columnBasic163',{});</script>
                                         </div>
                                 </div>
                                         <div class="span4">
                                         <div class="span12 column">
-                                            <div id="splineBasic204" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getSplineChart('splineBasic204',{});</script>
+                                            <div id="drilldownColumn122" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getDrilldownColumnChart('drilldownColumn122',{});</script>
                                         </div>
                                 </div>
                                     </div>
@@ -48,93 +66,40 @@
                                     <div class="row-fluid">
                                         <div class="span4">
                                         <div class="span12 column">
-                                            <div id="temperatureBasic55" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getTemperatureChart('temperatureBasic55',{});</script>
+                                            <div id="negativeColumn167" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getNegativeColumnChart('negativeColumn167',{});</script>
                                         </div>
                                 </div>
                                         <div class="span4">
                                         <div class="span12 column">
-                                            <div id="areaStackedBasic187" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getAreaStackedChart('areaStackedBasic187',{});</script>
+                                            <div id="placementColumn230" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getPlacementColumnChart('placementColumn230',{});</script>
                                         </div>
                                 </div>
                                         <div class="span4">
                                         <div class="span12 column">
-                                            <div id="columnBasic89" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getColumnChart('columnBasic89',{});</script>
-                                        </div>
-                                </div>
-                                    </div>
-                                
-                        <div class="row-fluid">
-                            <div class="span12">
-
-                                
-                            
-                                    <div class="row-fluid">
-                                        <div class="span4">
-                                        <div class="span12 column">
-                                            <div id="areaBasic330" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getAreaChart('areaBasic330',{});</script>
-                                        </div>
-                                </div>
-                                        <div class="span4">
-                                        <div class="span12 column">
-                                            <div id="areaInvertedBasic224" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getAreaInvertedChart('areaInvertedBasic224',{});</script>
-                                        </div>
-                                </div>
-                                        <div class="span4">
-                                        <div class="span12 column">
-                                            <div id="areaMissingBasic236" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getAreaMissingChart('areaMissingBasic236',{});</script>
+                                            <div id="rangeColumn42" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getRangeColumnChart('rangeColumn42',{});</script>
                                         </div>
                                 </div>
                                     </div>
                                 
                                     <div class="row-fluid">
-                                        <div class="span4">
+                                        <div class="span6">
                                         <div class="span12 column">
-                                            <div id="barBasic96" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getBarChart('barBasic96',{});</script>
+                                            <div id="areaBasic212" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getAreaChart('areaBasic212',{});</script>
                                         </div>
                                 </div>
-                                        <div class="span4">
+                                        <div class="span6">
                                         <div class="span12 column">
-                                            <div id="barNegativeStackBasic207" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getBarNegativeStackChart('barNegativeStackBasic207',{});</script>
-                                        </div>
-                                </div>
-                                        <div class="span4">
-                                        <div class="span12 column">
-                                            <div id="barStackBasic29" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getBarStackChart('barStackBasic29',{});</script>
-                                        </div>
-                                </div>
-                                    </div>
-                                
-                                    <div class="row-fluid">
-                                        <div class="span4">
-                                        <div class="span12 column">
-                                            <div id="BellcurveBasic336" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getBellcurveChart('BellcurveBasic336',{});</script>
-                                        </div>
-                                </div>
-                                        <div class="span4">
-                                        <div class="span12 column">
-                                            <div id="boxplotBasic290" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getBoxplotChart('boxplotBasic290',{});</script>
-                                        </div>
-                                </div>
-                                        <div class="span4">
-                                        <div class="span12 column">
-                                            <div id="BubbleBasic54" class="chart"></div>
-                                            <script type="text/javascript" style="">var customHighchart = new CustomHighchart();customHighchart.getBubbleChart('BubbleBasic54',{});</script>
+                                            <div id="areaInvertedBasic285" class="chart"></div>
+                                            <script type="text/javascript">var customHighchart = new CustomHighchart();customHighchart.getAreaInvertedChart('areaInvertedBasic285',{});</script>
                                         </div>
                                 </div>
                                     </div>
                                 </div>
-                        </div>
-                    </div>           
+            
+                   
   </body>
 </html>

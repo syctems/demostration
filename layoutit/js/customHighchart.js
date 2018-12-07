@@ -1945,3 +1945,406 @@ CustomHighchart.prototype.getComboDualAxesChart = function(name,option)
     var data = Object.assign(init,option);
     Highcharts.chart(name, data);
 }
+
+CustomHighchart.prototype.getComboMultiAxesChart = function(name,option)
+{
+    var init = {  
+            chart: {
+                zoomType: 'xy'
+            },
+            title: {
+                text: 'Average Monthly Weather Data for Tokyo'
+            },
+            subtitle: {
+                text: 'Source: WorldClimate.com'
+            },
+            xAxis: [{
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                crosshair: true
+            }],
+            yAxis: [{ // Primary yAxis
+                labels: {
+                    format: '{value}°C',
+                    style: {
+                        color: Highcharts.getOptions().colors[2]
+                    }
+                },
+                title: {
+                    text: 'Temperature',
+                    style: {
+                        color: Highcharts.getOptions().colors[2]
+                    }
+                },
+                opposite: true
+
+            }, { // Secondary yAxis
+                gridLineWidth: 0,
+                title: {
+                    text: 'Rainfall',
+                    style: {
+                        color: Highcharts.getOptions().colors[0]
+                    }
+                },
+                labels: {
+                    format: '{value} mm',
+                    style: {
+                        color: Highcharts.getOptions().colors[0]
+                    }
+                }
+
+            }, { // Tertiary yAxis
+                gridLineWidth: 0,
+                title: {
+                    text: 'Sea-Level Pressure',
+                    style: {
+                        color: Highcharts.getOptions().colors[1]
+                    }
+                },
+                labels: {
+                    format: '{value} mb',
+                    style: {
+                        color: Highcharts.getOptions().colors[1]
+                    }
+                },
+                opposite: true
+            }],
+            tooltip: {
+                shared: true
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                x: 80,
+                verticalAlign: 'top',
+                y: 55,
+                floating: true,
+                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255,255,255,0.25)'
+            },
+            series: [{
+                name: 'Rainfall',
+                type: 'column',
+                yAxis: 1,
+                data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                tooltip: {
+                    valueSuffix: ' mm'
+                }
+
+            }, {
+                name: 'Sea-Level Pressure',
+                type: 'spline',
+                yAxis: 2,
+                data: [1016, 1016, 1015.9, 1015.5, 1012.3, 1009.5, 1009.6, 1010.2, 1013.1, 1016.9, 1018.2, 1016.7],
+                marker: {
+                    enabled: false
+                },
+                dashStyle: 'shortdot',
+                tooltip: {
+                    valueSuffix: ' mb'
+                }
+
+            }, {
+                name: 'Temperature',
+                type: 'spline',
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                tooltip: {
+                    valueSuffix: ' °C'
+                }
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getComboRegressionChart = function(name,option)
+{
+    var init = {  
+            xAxis: {
+                min: -0.5,
+                max: 5.5
+            },
+            yAxis: {
+                min: 0
+            },
+            title: {
+                text: 'Scatter plot with regression line'
+            },
+            series: [{
+                type: 'line',
+                name: 'Regression Line',
+                data: [[0, 1.11], [5, 4.51]],
+                marker: {
+                    enabled: false
+                },
+                states: {
+                    hover: {
+                        lineWidth: 0
+                    }
+                },
+                enableMouseTracking: false
+            }, {
+                type: 'scatter',
+                name: 'Observations',
+                data: [1, 1.5, 2.8, 3.5, 3.9, 4.2],
+                marker: {
+                    radius: 4
+                }
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getFunnelChart = function(name,option)
+{
+    var init = {  
+            chart: {
+                type: 'funnel'
+            },
+            title: {
+                text: 'Sales funnel'
+            },
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '<b>{point.name}</b> ({point.y:,.0f})',
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black',
+                        softConnector: true
+                    },
+                    center: ['40%', '50%'],
+                    neckWidth: '30%',
+                    neckHeight: '25%',
+                    width: '80%'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            series: [{
+                name: 'Unique users',
+                data: [
+                    ['Website visits', 15654],
+                    ['Downloads', 4064],
+                    ['Requested price list', 1987],
+                    ['Invoice sent', 976],
+                    ['Finalized', 846]
+                ]
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getHeatmapChart = function(name,option)
+{
+    var init = {  
+            chart: {
+                type: 'heatmap',
+                marginTop: 40,
+                marginBottom: 80,
+                plotBorderWidth: 1
+            },
+
+
+            title: {
+                text: 'Sales per employee per weekday'
+            },
+
+            xAxis: {
+                categories: ['Alexander', 'Marie', 'Maximilian', 'Sophia', 'Lukas', 'Maria', 'Leon', 'Anna', 'Tim', 'Laura']
+            },
+
+            yAxis: {
+                categories: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                title: null
+            },
+
+            colorAxis: {
+                min: 0,
+                minColor: '#FFFFFF',
+                maxColor: Highcharts.getOptions().colors[0]
+            },
+
+            legend: {
+                align: 'right',
+                layout: 'vertical',
+                margin: 0,
+                verticalAlign: 'top',
+                y: 25,
+                symbolHeight: 280
+            },
+
+            tooltip: {
+                formatter: function () {
+                    return '<b>' + this.series.xAxis.categories[this.point.x] + '</b> sold <br><b>' +
+                        this.point.value + '</b> items on <br><b>' + this.series.yAxis.categories[this.point.y] + '</b>';
+                }
+            },
+
+            series: [{
+                name: 'Sales per employee',
+                borderWidth: 1,
+                data: [[0, 0, 10], [0, 1, 19], [0, 2, 8], [0, 3, 24], [0, 4, 67], [1, 0, 92], [1, 1, 58], [1, 2, 78], [1, 3, 117], [1, 4, 48], [2, 0, 35], [2, 1, 15], [2, 2, 123], [2, 3, 64], [2, 4, 52], [3, 0, 72], [3, 1, 132], [3, 2, 114], [3, 3, 19], [3, 4, 16], [4, 0, 38], [4, 1, 5], [4, 2, 8], [4, 3, 117], [4, 4, 115], [5, 0, 88], [5, 1, 32], [5, 2, 12], [5, 3, 6], [5, 4, 120], [6, 0, 13], [6, 1, 44], [6, 2, 88], [6, 3, 98], [6, 4, 96], [7, 0, 31], [7, 1, 1], [7, 2, 82], [7, 3, 32], [7, 4, 30], [8, 0, 85], [8, 1, 97], [8, 2, 123], [8, 3, 64], [8, 4, 84], [9, 0, 47], [9, 1, 114], [9, 2, 31], [9, 3, 48], [9, 4, 91]],
+                dataLabels: {
+                    enabled: true,
+                    color: '#000000'
+                }
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getHistogramChart = function(name,option)
+{
+    var init = {  
+            title: {
+                text: 'Highcharts Histogram'
+            },
+            xAxis: [{
+                title: { text: 'Data' },
+                alignTicks: false
+            }, {
+                title: { text: 'Histogram' },
+                alignTicks: false,
+                opposite: true
+            }],
+
+            yAxis: [{
+                title: { text: 'Data' }
+            }, {
+                title: { text: 'Histogram' },
+                opposite: true
+            }],
+
+            series: [{
+                name: 'Histogram',
+                type: 'histogram',
+                xAxis: 1,
+                yAxis: 1,
+                baseSeries: 's1',
+                zIndex: -1
+            }, {
+                name: 'Data',
+                type: 'scatter',
+                data: [3.5, 3, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3.7, 3.4, 3, 3, 4, 4.4, 3.9, 3.5, 3.8, 3.8, 3.4, 3.7, 3.6, 3.3, 3.4, 3, 3.4, 3.5, 3.4, 3.2, 3.1, 3.4, 4.1, 4.2, 3.1, 3.2, 3.5, 3.6, 3, 3.4, 3.5, 2.3, 3.2, 3.5, 3.8, 3, 3.8, 3.2, 3.7, 3.3, 3.2, 3.2, 3.1, 2.3, 2.8, 2.8, 3.3, 2.4, 2.9, 2.7, 2, 3, 2.2, 2.9, 2.9, 3.1, 3, 2.7, 2.2, 2.5, 3.2, 2.8, 2.5, 2.8, 2.9, 3, 2.8, 3, 2.9, 2.6, 2.4, 2.4, 2.7, 2.7, 3, 3.4, 3.1, 2.3, 3, 2.5, 2.6, 3, 2.6, 2.3, 2.7, 3, 2.9, 2.9, 2.5, 2.8, 3.3, 2.7, 3, 2.9, 3, 3, 2.5, 2.9, 2.5, 3.6, 3.2, 2.7, 3, 2.5, 2.8, 3.2, 3, 3.8, 2.6, 2.2, 3.2, 2.8, 2.8, 2.7, 3.3, 3.2, 2.8, 3, 2.8, 3, 2.8, 3.8, 2.8, 2.8, 2.6, 3, 3.4, 3.1, 3, 3.1, 3.1, 3.1, 2.7, 3.2, 3.3, 3, 2.5, 3, 3.4, 3],
+                id: 's1',
+                marker: {
+                    radius: 1.5
+                }
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getLineBoostChart = function(name,option)
+{
+    var init = {  
+          chart: {
+                zoomType: 'x'
+            },
+
+            title: {
+                text: 'Highcharts drawing ' + 5000 + ' points'
+            },
+
+            subtitle: {
+                text: 'Using the Boost module'
+            },
+
+            tooltip: {
+                valueDecimals: 2
+            },
+
+            xAxis: {
+                type: 'datetime'
+            },
+
+            series: [{
+                data: this.getBoostDataChart(5000),
+                lineWidth: 0.5,
+                name: 'Hourly data points'
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}
+
+CustomHighchart.prototype.getBoostDataChart = function(n)
+{
+        var arr = [],
+        i,
+        x,
+        a,
+        b,
+        c,
+        spike;
+    for (
+        i = 0, x = Date.UTC(new Date().getUTCFullYear(), 0, 1) - n * 36e5;
+        i < n;
+        i = i + 1, x = x + 36e5
+    ) {
+        if (i % 100 === 0) {
+            a = 2 * Math.random();
+        }
+        if (i % 1000 === 0) {
+            b = 2 * Math.random();
+        }
+        if (i % 10000 === 0) {
+            c = 2 * Math.random();
+        }
+        if (i % 50000 === 0) {
+            spike = 10;
+        } else {
+            spike = 0;
+        }
+        arr.push([
+            x,
+            2 * Math.sin(i / 100) + a + b + c + spike + Math.random()
+        ]);
+    }
+    return arr;
+}
+
+
+CustomHighchart.prototype.getLineLabelChart = function(name,option)
+{
+    var init = {  
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: 'Monthly Average Temperature'
+            },
+            subtitle: {
+                text: 'Source: WorldClimate.com'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Temperature (°C)'
+                }
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            series: [{
+                name: 'Tokyo',
+                data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            }, {
+                name: 'London',
+                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }]
+    };
+    var data = Object.assign(init,option);
+    Highcharts.chart(name, data);
+}

@@ -161,3 +161,52 @@
 	height: 400px;
 	margin: 0 auto	
 }
+
+#comboMultiAxesBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+
+#comboRegressionBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+
+#funnelBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+
+#heatmapBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+
+#histogramBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+
+#lineBoostBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+
+#lineLabelBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}

@@ -21,7 +21,7 @@
 
     <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="img/favicon.png">
-        <script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
     <!--[if lt IE 9]>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <![endif]-->
@@ -40,6 +40,10 @@
     <script src="js/CustomHighchart.js"></script>
     <script src="code/modules/histogram-bellcurve.js"></script>
     <script src="code/modules/drilldown.js"></script>
+    <script src="code/modules/funnel.js"></script>
+    <script src="code/modules/heatmap.js"></script>
+    <script src="code/modules/histogram-bellcurve.js"></script>
+    <script src="code/modules/boost.js"></script>
 </head>
 
 <body style="min-height: 660px; cursor: auto;" class="edit">
@@ -77,8 +81,8 @@
                     <ul class="nav pull-right">
                         <li>
                             <div class="btn-group">
-                                <span><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=justjavac&repo=layoutit&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe></span>
-                                <span><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=justjavac&repo=layoutit&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe></span>
+                               <!--  <span><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=justjavac&repo=layoutit&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe></span>
+                                <span><iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=justjavac&repo=layoutit&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe></span> -->
                             </div>
                         </li>
                     </ul>
@@ -1059,6 +1063,19 @@
 
                             <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">线标签图表</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="lineLabelBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getLineLabelChart('lineLabelBasic',{});                              
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">分子图表</div>
                                 <div class="view">
                                         <div class="span12 column">
@@ -1078,6 +1095,18 @@
                                             <div id="BellcurveBasic" class="chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getBellcurveChart('BellcurveBasic',{});                              
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">波动图表</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="lineBoostBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getLineBoostChart('lineBoostBasic',{});                              
                                             </script>
                                         </div>
                                 </div>
@@ -1200,6 +1229,19 @@
                                             <div id="columnStackedPercentBasic" class="chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getColumnStackedPercentChart('columnStackedPercentBasic',{});                     
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">点状柱形图表</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="histogramBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getHistogramChart('histogramBasic',{});                     
                                             </script>
                                         </div>
                                 </div>
@@ -1383,7 +1425,65 @@
                                         </div>
                                 </div>
                             </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">多轴混合图</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="comboMultiAxesBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getComboMultiAxesChart('comboMultiAxesBasic',{});                              
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">线性混合图</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="comboRegressionBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getComboRegressionChart('comboRegressionBasic',{});                              
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
+
                         </li>
+
+                        <li class="nav-header"><i class="icon-plus icon-white"></i> 其他</li>
+                        <li style="display: none;" class="boxes mute" id="elmComm">
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">漏斗图</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="funnelBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getFunnelChart('funnelBasic',{});                              
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">热力图</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="heatmapBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getHeatmapChart('heatmapBasic',{});                              
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>

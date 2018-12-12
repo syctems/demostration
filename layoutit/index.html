@@ -44,6 +44,7 @@
     <script src="code/modules/heatmap.js"></script>
     <script src="code/modules/histogram-bellcurve.js"></script>
     <script src="code/modules/boost.js"></script>
+    <script src="code/modules/pareto.js"></script>
 </head>
 
 <body style="min-height: 660px; cursor: auto;" class="edit">
@@ -1130,6 +1131,32 @@
                                         </div>
                                 </div>
                             </div>
+
+                             <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">圆环饼图图表</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="donutPieBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getDonutPieChart('donutPieBasic',{});                                                        
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">钻取饼图</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="drillDownBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getDrillDownChart('drillDownBasic',{});                                                        
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
                         </li>
 
                         <li class="nav-header"><i class="icon-plus icon-white"></i> 柱图表</li>
@@ -1452,6 +1479,18 @@
                                 </div>
                             </div>
 
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">线柱混合图</div>
+                                <div class="view">
+                                        <div class="span12 column">
+                                            <div id="parenToBasic" class="chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getParenToChart('parenToBasic',{});                              
+                                            </script>
+                                        </div>
+                                </div>
+                            </div>
                         </li>
 
                         <li class="nav-header"><i class="icon-plus icon-white"></i> 其他</li>

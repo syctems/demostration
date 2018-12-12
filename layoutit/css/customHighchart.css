@@ -210,3 +210,22 @@
 	height: 400px;
 	margin: 0 auto	
 }
+
+#parenToBasic{
+	min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+#donutPieBasic{
+		min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}
+#drillDownBasic{
+		min-width: 420px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto	
+}

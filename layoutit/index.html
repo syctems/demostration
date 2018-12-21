@@ -35,16 +35,22 @@
     <script src="code/highcharts.js"></script>
     <script src="code/highcharts-more.js"></script>
     <script src="code/modules/series-label.js"></script>
-    <script src="code/modules/exporting.js"></script>
-    <script src="code/modules/export-data.js"></script>
     <script src="js/CustomHighchart.js"></script>
     <script src="code/modules/histogram-bellcurve.js"></script>
     <script src="code/modules/drilldown.js"></script>
     <script src="code/modules/funnel.js"></script>
     <script src="code/modules/heatmap.js"></script>
-    <script src="code/modules/histogram-bellcurve.js"></script>
     <script src="code/modules/boost.js"></script>
     <script src="code/modules/pareto.js"></script>
+    <script src="code/modules/sankey.js"></script>
+    <script src="code/modules/streamgraph.js"></script>
+    <script src="code/modules/annotations.js"></script>
+    <script src="code/modules/treemap.js"></script>
+    <script src="code/modules/variable-pie.js"></script>
+    <script src="code/modules/variwide.js"></script>
+    <script src="code/modules/vector.js"></script>
+    <script src="code/modules/windbarb.js"></script>
+    <script src="code/modules/xrange.js"></script>
 </head>
 
 <body style="min-height: 660px; cursor: auto;" class="edit">
@@ -134,17 +140,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+<!--                             <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
                                 <div class="preview">
-                                    <input value="8 4" type="text">
+                                    <input value="4 8" type="text">
                                 </div>
                                 <div class="view">
                                     <div class="row-fluid clearfix">
-                                        <div class="span8 column"></div>
+                                        
                                         <div class="span4 column"></div>
+                                        <div class="span8 column"></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
                                 <div class="preview">
                                     <input value="4 4 4" type="text">
@@ -154,6 +161,17 @@
                                         <div class="span4 column"></div>
                                         <div class="span4 column"></div>
                                         <div class="span4 column"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lyrow ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <div class="preview">
+                                    <input value="3 9" type="text">
+                                </div>
+                                <div class="view">
+                                    <div class="row-fluid clearfix">
+                                        <div class="span3 column"></div>
+                                        <div class="span9 column"></div>
                                     </div>
                                 </div>
                             </div>
@@ -833,7 +851,7 @@
                         </li>
                     </ul>
                     <ul class="nav nav-list accordion-group">
-                        <li class="nav-header"><i class="icon-plus icon-white"></i> 交互组件 <span class="label label-important">NEW!</span>
+                        <li class="nav-header"><i class="icon-plus icon-white"></i> 交互组件
                             <div class="pull-right popover-info"><i class="icon-question-sign "></i>
                                 <div class="popover fade right">
                                     <div class="arrow"></div>
@@ -1043,6 +1061,71 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">树状图</div>
+                                <div class="view">
+                                    <div class="tree well">
+                                        <ul>
+                                            <li>
+                                                <span><i class="icon-folder-open"></i> 顶级节点1</span>
+                                                <ul>
+                                                    <li>
+                                                        <span><i class="icon-minus-sign"></i> 一级节点1</span> <a href=""></a>
+                                                        <ul>
+                                                            <li>
+                                                                <span><i class="icon-leaf"></i> 二级节点1_1</span> <a href=""></a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <span><i class="icon-minus-sign"></i> 一级节点2</span> <a href=""></a>
+                                                        <ul>
+                                                            <li>
+                                                                <span><i class="icon-leaf"></i>二级节点2_1</span> <a href=""></a>
+                                                            </li>
+                                                            <li>
+                                                                <span><i class="icon-minus-sign"></i> 二级节点2_2</span> <a href=""></a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <span><i class="icon-minus-sign"></i>三级节点2_1</span> <a href=""></a>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <span><i class="icon-leaf"></i>四级节点2_1</span> <a href=""></a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span><i class="icon-leaf"></i> 四级节点2_2</span> <a href=""></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span><i class="icon-leaf"></i>三级节点2_2</span> <a href=""></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span><i class="icon-leaf"></i> 三级节点2_3</span> <a href=""></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <span><i class="icon-leaf"></i>二级节点2_3</span> <a href=""></a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <span><i class="icon-folder-open"></i> 顶级节点2</span> <a href=""></a>
+                                                <ul>
+                                                    <li>
+                                                        <span><i class="icon-leaf"></i> 一级节点2_1</span> <a href=""></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                     <ul class="nav nav-list accordion-group">
@@ -1053,12 +1136,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">线图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="lineBasic" class="col-md-12 chart"></div>
+                                            <div id="lineBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getLineChart('lineBasic',{});
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1066,12 +1147,43 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">线标签图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="lineLabelBasic" class="chart"></div>
+                                            <div id="lineLabelBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
-                                                var customHighchart = new CustomHighchart();customHighchart.getLineLabelChart('lineLabelBasic',{});                              
+                                                var customHighchart = new CustomHighchart();customHighchart.getLineLabelChart('lineLabelBasic',{});                          
                                             </script>
-                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">不规则曲线图表</div>
+                                <div class="view">
+                                            <div id="splineIrregularTimeBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getSplineIrregularTimeChart('splineIrregularTimeBasic',{});                          
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">SplinePlotBands图表</div>
+                                <div class="view">
+                                            <div id="splinePlotBandsBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getSplinePlotBandsChart('splinePlotBandsBasic',{});                          
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">图标曲线图表</div>
+                                <div class="view">
+                                            <div id="splineSymbolsBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getSplineSymbolsChart('splineSymbolsBasic',{});                          
+                                            </script>
                                 </div>
                             </div>
 
@@ -1079,12 +1191,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">分子图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="splineBasic" class="chart"></div>
+                                            <div id="splineBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getSplineChart('splineBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1092,28 +1202,33 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">钟形图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="BellcurveBasic" class="chart"></div>
+                                            <div id="BellcurveBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getBellcurveChart('BellcurveBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
                             <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">波动图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="lineBoostBasic" class="chart"></div>
+                                            <div id="lineBoostBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getLineBoostChart('lineBoostBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
-
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">风动图表</div>
+                                <div class="view">
+                                            <div id="windbarbBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getWindbarbChart('windbarbBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
 
 <!--    图表区    -->                            
                         </li>
@@ -1123,12 +1238,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">饼图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="pieBasic" class="chart"></div>
+                                            <div id="pieBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getPieChart('pieBasic',{});                                                        
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1136,12 +1249,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">圆环饼图图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="donutPieBasic" class="chart"></div>
+                                            <div id="donutPieBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getDonutPieChart('donutPieBasic',{});                                                        
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1149,15 +1260,72 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">钻取饼图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="drillDownBasic" class="chart"></div>
+                                            <div id="drillDownBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getDrillDownChart('drillDownBasic',{});                                                        
                                             </script>
-                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">单色饼图</div>
+                                <div class="view">
+                                            <div id="monochromePieBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getMonochromePieChart('monochromePieBasic',{});                                                        
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">拱形图</div>
+                                <div class="view">
+                                            <div id="semiCirclePieBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getSemiCirclePieChart('semiCirclePieBasic',{});                                                        
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">可变饼图</div>
+                                <div class="view">
+                                            <div id="variablePieBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getVariablePieChart('variablePieBasic',{});                                                        
+                                            </script>
                                 </div>
                             </div>
                         </li>
+
+                        <li class="nav-header"><i class="icon-plus icon-white"></i> 极地图表</li>
+                        <li style="display: none;" class="boxes mute" id="elmComm">
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">极地图</div>
+                                <div class="view">
+                                            <div id="polarBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getPolarChart('polarBasic',{});                     
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">星轮图</div>
+                                <div class="view">
+                                            <div id="polarSpiderBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getPolarSpiderChart('polarSpiderBasic',{});                     
+                                            </script>
+                                </div>
+                            </div>
+                        </li>
+
 
                         <li class="nav-header"><i class="icon-plus icon-white"></i> 柱图表</li>
                         <li style="display: none;" class="boxes mute" id="elmComm">
@@ -1165,60 +1333,50 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">柱图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="columnBasic" class="chart"></div>
+                                            <div id="columnBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getColumnChart('columnBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
                             <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">统计柱图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="drilldownColumnBasic" class="chart"></div>
+                                            <div id="drilldownColumnBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getDrilldownColumnChart('drilldownColumnBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
                             <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">反向柱图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="negativeColumnBasic" class="chart"></div>
+                                            <div id="negativeColumnBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getNegativeColumnChart('negativeColumnBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
                             <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">放置柱图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="placementColumnBasic" class="chart"></div>
+                                            <div id="placementColumnBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getPlacementColumnChart('placementColumnBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
                             <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">范围柱图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="rangeColumnBasic" class="chart"></div>
+                                            <div id="rangeColumnBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getRangeColumnChart('rangeColumnBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1226,12 +1384,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">柱堆积图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="columnStackedBasic" class="chart"></div>
+                                            <div id="columnStackedBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getColumnStackedChart('columnStackedBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1239,12 +1395,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">柱堆积群图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="columnStackGroupedBasic" class="chart"></div>
+                                            <div id="columnStackGroupedBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getColumnStackGroupedChart('columnStackGroupedBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1252,12 +1406,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">柱堆积百分比图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="columnStackedPercentBasic" class="chart"></div>
+                                            <div id="columnStackedPercentBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getColumnStackedPercentChart('columnStackedPercentBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1265,12 +1417,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">点状柱形图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="histogramBasic" class="chart"></div>
+                                            <div id="histogramBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getHistogramChart('histogramBasic',{});                     
                                             </script>
-                                        </div>
                                 </div>
                             </div>
                         </li>
@@ -1283,12 +1433,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">区域图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="areaBasic" class="chart"></div>
+                                            <div id="areaBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getAreaChart('areaBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1296,12 +1444,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">反向区域图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="areaInvertedBasic" class="chart"></div>
+                                            <div id="areaInvertedBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getAreaInvertedChart('areaInvertedBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1309,12 +1455,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">缺失区域图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="areaMissingBasic" class="chart"></div>
+                                            <div id="areaMissingBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getAreaMissingChart('areaMissingBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1323,12 +1467,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">温度图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="temperatureBasic" class="chart"></div>
+                                            <div id="temperatureBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getTemperatureChart('temperatureBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1336,12 +1478,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">区域堆积图表</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="areaStackedBasic" class="chart"></div>
+                                            <div id="areaStackedBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getAreaStackedChart('areaStackedBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
                         </li>
@@ -1353,12 +1493,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">条形图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="barBasic" class="chart"></div>
+                                            <div id="barBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getBarChart('barBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1366,12 +1504,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">双面条形图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="barNegativeStackBasic" class="chart"></div>
+                                            <div id="barNegativeStackBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getBarNegativeStackChart('barNegativeStackBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1379,12 +1515,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">堆积条形图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="barStackBasic" class="chart"></div>
+                                            <div id="barStackBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getBarStackChart('barStackBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1397,12 +1531,54 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">箱形图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="boxplotBasic" class="chart"></div>
+                                            <div id="boxplotBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getBoxplotChart('boxplotBasic',{});                              
                                             </script>
-                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">树形图</div>
+                                <div class="view">
+                                            <div id="treemapBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getTreemapChart('treemapBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">树形图2</div>
+                                <div class="view">
+                                            <div id="treemapLevelBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getTreemapLevelChart('treemapLevelBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">水流图</div>
+                                <div class="view">
+                                            <div id="waterFallBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getWaterFallChart('waterFallBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">射线图</div>
+                                <div class="view">
+                                            <div id="rangeBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getRangeChart('rangeBasic',{});                              
+                                            </script>
                                 </div>
                             </div>
                         </li>
@@ -1414,14 +1590,35 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">气泡图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="BubbleBasic" class="chart"></div>
+                                            <div id="BubbleBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getBubbleChart('BubbleBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">散泡图</div>
+                                <div class="view">
+                                            <div id="scatterBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getScatterChart('scatterBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">加强散泡图</div>
+                                <div class="view">
+                                            <div id="scatterBoostBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getScatterBoostChart('scatterBoostBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+-->
                         </li>
 
                         <li class="nav-header"><i class="icon-plus icon-white"></i> 混合图</li>
@@ -1431,12 +1628,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">混合图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="comboBasic" class="chart"></div>
+                                            <div id="comboBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getComboChart('comboBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1444,12 +1639,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">双轴混合图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="comboDualAxesBasic" class="chart"></div>
+                                            <div id="comboDualAxesBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getComboDualAxesChart('comboDualAxesBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1457,12 +1650,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">多轴混合图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="comboMultiAxesBasic" class="chart"></div>
+                                            <div id="comboMultiAxesBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getComboMultiAxesChart('comboMultiAxesBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1470,12 +1661,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">线性混合图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="comboRegressionBasic" class="chart"></div>
+                                            <div id="comboRegressionBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getComboRegressionChart('comboRegressionBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1483,12 +1672,21 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">线柱混合图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="parenToBasic" class="chart"></div>
+                                            <div id="parenToBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getParenToChart('parenToBasic',{});                              
                                             </script>
-                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">多边混合图</div>
+                                <div class="view">
+                                            <div id="polygonBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getPolygonChart('polygonBasic',{});                              
+                                            </script>
                                 </div>
                             </div>
                         </li>
@@ -1500,12 +1698,10 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">漏斗图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="funnelBasic" class="chart"></div>
+                                            <div id="funnelBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getFunnelChart('funnelBasic',{});                              
                                             </script>
-                                        </div>
                                 </div>
                             </div>
 
@@ -1513,12 +1709,65 @@
                                 <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
                                 <div class="preview">热力图</div>
                                 <div class="view">
-                                        <div class="span12 column">
-                                            <div id="heatmapBasic" class="chart"></div>
+                                            <div id="heatmapBasic" class="data-highcharts-chart chart"></div>
                                             <script type="text/javascript">
                                                 var customHighchart = new CustomHighchart();customHighchart.getHeatmapChart('heatmapBasic',{});                              
                                             </script>
-                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">流线图</div>
+                                <div class="view">
+                                            <div id="streamgraphBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getStreamgraphChart('streamgraphBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">金塔图</div>
+                                <div class="view">
+                                            <div id="pyramidBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getPyramidChart('pyramidBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">桑基图</div>
+                                <div class="view">
+                                            <div id="sankeyDiagramBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getSankeyDiagramChart('sankeyDiagramBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">可变图</div>
+                                <div class="view">
+                                            <div id="variwideBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getVariwideChart('variwideBasic',{});                              
+                                            </script>
+                                </div>
+                            </div>
+
+                            <div class="box box-element ui-draggable"> <a href="#close" class="remove label label-important"><i class="icon-remove icon-white"></i>删除</a>  <span class="drag label"><i class="icon-move"></i>拖动</span>
+                                <span class="configuration"><button type="button" class="btn btn-mini" data-target="#editorModal" role="button" data-toggle="modal">编辑</button></span>
+                                <div class="preview">风向图</div>
+                                <div class="view">
+                                            <div id="vectorBasic" class="data-highcharts-chart chart"></div>
+                                            <script type="text/javascript">
+                                                var customHighchart = new CustomHighchart();customHighchart.getVectorChart('vectorBasic',{});                              
+                                            </script>
                                 </div>
                             </div>
                         </li>
@@ -1552,9 +1801,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
             <!-- end demo -->
             <!--/span-->
@@ -1604,6 +1850,5 @@
         <div class="modal-footer"> <a class="btn" data-dismiss="modal">Close</a> 
         </div>
     </div>
-
 </body>
 </html>

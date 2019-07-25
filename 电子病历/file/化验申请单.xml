@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="1.2019.1.29">
+   <Attributes />
+   <AutoFixTextMode>None</AutoFixTextMode>
+   <XElements>
+      <Element xsi:type="XTextHeader">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XString" StyleIndex="1">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>某某医院</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="1" />
+            <Element xsi:type="XString" StyleIndex="1">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>临床检查化验申请单</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextBody">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XTextTable" NumOfRows="7" NumOfColumns="9">
+               <Attributes />
+               <ID />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>姓名:</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="3" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb001</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>姓名</Name>
+                                 <InnerValue />
+                                 <BackgroundText>姓名</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>性别:</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb002</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>性别</Name>
+                                 <InnerValue />
+                                 <BackgroundText>性别</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>年龄:</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb003</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>年龄</Name>
+                                 <InnerValue />
+                                 <BackgroundText>年龄</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>科别:</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb003</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>科别</Name>
+                                 <InnerValue />
+                                 <BackgroundText>科别</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>床号：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb005</BindingPath>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>床号</Name>
+                                 <InnerValue />
+                                 <BackgroundText>床号</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>简要病史及体征：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb006</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>简要病史</Name>
+                                 <InnerValue />
+                                 <BackgroundText>简要病史</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>9</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>临床诊断：</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb007</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>诊断</Name>
+                                 <InnerValue />
+                                 <BackgroundText>诊断</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>9</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>申请检查项目：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>9</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XInputField" StyleIndex="7">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb008</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>检查项目</Name>
+                                 <InnerValue />
+                                 <BackgroundText>检查项目</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+                           </XElements>
+                           <ColSpan>9</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>3</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>申请医生:</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb009</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>申请医生</Name>
+                                 <InnerValue />
+                                 <BackgroundText>申请医生</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>4</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>申请时间:</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <ValueName />
+                                    <ValueType>DateTime</ValueType>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                    <ExcludeKeywords />
+                                    <CustomMessage />
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb009</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>申请时间</Name>
+                                 <InnerValue />
+                                 <BackgroundText>申请时间</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings>
+                                    <EditStyle>Date</EditStyle>
+                                 </FieldSettings>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>3</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>检验医生:</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb010</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>检验医生</Name>
+                                 <InnerValue />
+                                 <BackgroundText>检验医生</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>4</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="2">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>报告时间:</Text>
+                              </Element>
+                              <Element xsi:type="XInputField" StyleIndex="5">
+                                 <Attributes />
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <EnableValueValidate>true</EnableValueValidate>
+                                 <ValidateStyle>
+                                    <DateTimeMaxValue>1980-01-01T00:00:00</DateTimeMaxValue>
+                                    <DateTimeMinValue>1980-01-01T00:00:00</DateTimeMinValue>
+                                 </ValidateStyle>
+                                 <ValueBinding>
+                                    <DataSource>T_B_TongYong</DataSource>
+                                    <BindingPath>Mb011</BindingPath>
+                                    <AutoUpdate>true</AutoUpdate>
+                                 </ValueBinding>
+                                 <XElements />
+                                 <BorderElementColor />
+                                 <EventExpressions />
+                                 <Name>报告时间</Name>
+                                 <InnerValue />
+                                 <BackgroundText>报告时间</BackgroundText>
+                                 <LastSelectedListItems />
+                                 <FieldSettings />
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="6" />
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="4">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>187.458344</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>199.4861</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>99.74306</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>212.614609</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>94.61461</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>223.614578</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>72.8437347</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>325.2292</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>459.145935</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="5">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>注意事项：</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XString" StyleIndex="5">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>1、门诊病人持检查申请单在收费处交费并做好准备；</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XString" StyleIndex="5">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>2、消化系统检查前需禁食、 禁水8小时以上；</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="5" />
+            <Element xsi:type="XString" StyleIndex="5">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>3、泌尿系统及盆腔检查前适度充盈膀胱</Text>
+            </Element>
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements />
+      </Element>
+   </XElements>
+   <Parameters />
+   <FileName>C:\Users\Administrator\Desktop\新建文件夹\化验申请单.xml</FileName>
+   <FileFormat>XML</FileFormat>
+   <UserHistories />
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>微软雅黑</FontName>
+         <FontSize>9</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>微软雅黑</FontName>
+            <FontSize>9</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="1">
+            <FontName>宋体</FontName>
+            <FontSize>21.75</FontSize>
+            <Bold>true</Bold>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="2">
+            <FontName>微软雅黑</FontName>
+            <FontSize>9</FontSize>
+            <VerticalAlign>Middle</VerticalAlign>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="3">
+            <FontName>宋体</FontName>
+            <FontSize>14.25</FontSize>
+         </Style>
+         <Style Index="4">
+            <FontName>微软雅黑</FontName>
+            <FontSize>9</FontSize>
+            <VerticalAlign>Middle</VerticalAlign>
+            <BorderWidth>1</BorderWidth>
+            <PaddingLeft>15</PaddingLeft>
+            <PaddingTop>10</PaddingTop>
+            <PaddingBottom>10</PaddingBottom>
+         </Style>
+         <Style Index="5">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+         <Style Index="6">
+            <FontName>微软雅黑</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+         <Style Index="7">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <RepeatedImages />
+   <ControlOptionsForDebug>
+      <RuleVisible>false</RuleVisible>
+      <UserInfo>
+         <ID>511</ID>
+         <Name>上官海燕</Name>
+         <PermissionLevel>0</PermissionLevel>
+      </UserInfo>
+      <DocumentOptions>
+         <SecurityOptions>
+            <AutoEnablePermissionWhenUserLogin>false</AutoEnablePermissionWhenUserLogin>
+            <TrackVisibleLevel0>
+               <UnderLineColorString>#ADD8E6</UnderLineColorString>
+               <DeleteLineColorString>#FF7F50</DeleteLineColorString>
+            </TrackVisibleLevel0>
+            <TrackVisibleLevel1 />
+            <TrackVisibleLevel2>
+               <BackgroundColorString>#FFFFE0</BackgroundColorString>
+               <UnderLineColorNum>2</UnderLineColorNum>
+               <DeleteLineNum>2</DeleteLineNum>
+            </TrackVisibleLevel2>
+            <TrackVisibleLevel3>
+               <BackgroundColorString>#FFFFE0</BackgroundColorString>
+               <UnderLineColorNum>2</UnderLineColorNum>
+               <DeleteLineNum>2</DeleteLineNum>
+            </TrackVisibleLevel3>
+         </SecurityOptions>
+         <ViewOptions>
+            <NewInputContentUnderlineColor />
+            <AdornTextBackColorValue>#64808080</AdornTextBackColorValue>
+            <FieldHoverBackColorValue>#FFFFFF</FieldHoverBackColorValue>
+            <TagColorForNormalFieldValue>#FF0000</TagColorForNormalFieldValue>
+         </ViewOptions>
+         <BehaviorOptions>
+            <ParagraphFlagFollowTableOrSection>true</ParagraphFlagFollowTableOrSection>
+            <ValidateUserIDWhenEditDeleteComment>true</ValidateUserIDWhenEditDeleteComment>
+            <InsertDocumentWithCheckMRID>PromptForbitWhenFail</InsertDocumentWithCheckMRID>
+         </BehaviorOptions>
+         <EditOptions>
+            <GridLinePreviewText>DCWriter是南京都昌信息科技有限公司自主研发的专业的电子病历文档编辑器。</GridLinePreviewText>
+         </EditOptions>
+      </DocumentOptions>
+      <Font>
+         <Size>12</Size>
+      </Font>
+      <HeaderFooterFlagVisible>None</HeaderFooterFlagVisible>
+      <JumpPrint />
+      <PageTitlePosition>BottomRight</PageTitlePosition>
+      <Readonly>true</Readonly>
+   </ControlOptionsForDebug>
+   <GlobalJavaScriptReferences />
+   <Info>
+      <LicenseText>南京都昌信息科技有限公司:南京都昌信息科技有限公司2019年旗舰版</LicenseText>
+      <CreationTime>2013-12-16T16:26:21.1467774+08:00</CreationTime>
+      <LastModifiedTime>2019-07-23T15:03:11.6091471+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Operator>DCSoft.Writer Version:1.1.1820.34511</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>姓名:   性别: 年龄: 科别: 床号： 
+简要病史及体征： 
+临床诊断： 
+申请检查项目： 
+  
+  申请医生: 申请时间: 
+  检验医生: 报告时间: 注意事项：
+1、门诊病人持检查申请单在收费处交费并做好准备；
+2、消化系统检查前需禁食、 禁水8小时以上；
+3、泌尿系统及盆腔检查前适度充盈膀胱</BodyText>
+   <Comments />
+   <LocalConfig />
+   <PageSettings />
+</XTextDocument>

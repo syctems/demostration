@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<api>
+  <table>
+    <number>0</number>
+    <currentName>CT检查报告单</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>1</number>
+    <currentName>入院记录</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>2</number>
+    <currentName>化验申请单</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>3</number>
+    <currentName>影像申请单</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>4</number>
+    <currentName>急诊病历</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>5</number>
+    <currentName>手术安排表</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>6</number>
+    <currentName>手术知情同意书</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>7</number>
+    <currentName>护理记录</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>8</number>
+    <currentName>测试病例</currentName>
+    <serverIP>http://10.0.253.9:9999/pppp</serverIP>
+    <tableName>disease_info</tableName>
+    <currentClass>disease</currentClass>
+
+    <addAction>add</addAction>
+    <deleteAction>delete</deleteAction>
+    <updateAction>update</updateAction>
+    <listAction>list</listAction>
+    <detailAction>detail</detailAction>
+  </table>
+  
+  <table>
+    <number>9</number>
+    <currentName>病案首页</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>10</number>
+    <currentName>药品不良反映报告单</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+
+  <table>
+    <number>11</number>
+    <currentName>超声诊断书</currentName>
+    <serverIP></serverIP>
+    <tableName></tableName>
+    <currentClass></currentClass>
+
+    <addAction></addAction>
+    <deleteAction></deleteAction>
+    <updateAction></updateAction>
+    <listAction></listAction>
+    <detailAction></detailAction>
+  </table>
+</api>
+
+

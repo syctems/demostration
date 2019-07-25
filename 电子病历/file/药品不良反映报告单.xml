@@ -1,0 +1,2890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XTextDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" EditorVersionString="1.2019.1.29">
+   <Attributes />
+   <AutoFixTextMode>None</AutoFixTextMode>
+   <XElements>
+      <Element xsi:type="XTextHeader">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XParagraphFlag" StyleIndex="21" />
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextBody">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements>
+            <Element xsi:type="XString" StyleIndex="1">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>药 品 不 良 反 应 / 事 件 报 告 表</Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+            <Element xsi:type="XParagraphFlag" StyleIndex="0" />
+            <Element xsi:type="XString" StyleIndex="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>首次报告</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox" StyleIndex="3">
+               <ID>ckbFirst</ID>
+               <PropertyExpressions />
+               <Deleteable>false</Deleteable>
+               <Name>首次报告</Name>
+               <ValueBinding />
+               <Width>62</Width>
+               <Height>62</Height>
+               <GroupName>首次报告</GroupName>
+               <EventExpressions />
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>        跟踪报告</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox" StyleIndex="4">
+               <ID>ckbTracking</ID>
+               <PropertyExpressions />
+               <Deleteable>false</Deleteable>
+               <Width>62</Width>
+               <Height>62</Height>
+               <EventExpressions />
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="3" />
+            <Element xsi:type="XString" StyleIndex="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>报告类型：新的</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox" StyleIndex="3">
+               <ID>chkNew</ID>
+               <PropertyExpressions />
+               <Deleteable>false</Deleteable>
+               <ValueBinding />
+               <Width>62</Width>
+               <Height>62</Height>
+               <EventExpressions />
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>  严重</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox" StyleIndex="0">
+               <ID>chkSerious</ID>
+               <PropertyExpressions />
+               <Deleteable>false</Deleteable>
+               <ValueBinding />
+               <Width>62</Width>
+               <Height>62</Height>
+               <EventExpressions />
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>  </Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>一般</Text>
+            </Element>
+            <Element xsi:type="XTextCheckBox" StyleIndex="3">
+               <ID>chkGeneral</ID>
+               <PropertyExpressions />
+               <Deleteable>false</Deleteable>
+               <ValueBinding />
+               <Width>62</Width>
+               <Height>62</Height>
+               <EventExpressions />
+               <RuntimeVisible>true</RuntimeVisible>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>      科室</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="5" WhiteSpaceLength="13">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>             </Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>             办公电话</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="5" WhiteSpaceLength="16">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>                </Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="2">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>         编码：</Text>
+            </Element>
+            <Element xsi:type="XString" StyleIndex="6" WhiteSpaceLength="7">
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <XElements xsi:nil="true" />
+               <Text>       </Text>
+            </Element>
+            <Element xsi:type="XParagraphFlag" StyleIndex="3" />
+            <Element xsi:type="XTextTable" NumOfRows="2" NumOfColumns="8">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>患者姓名：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="7" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>性别：男</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkMale</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>女</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="9">
+                                 <ID>chkFemale</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="7" />
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>出生日期：    </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>年 月 日</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="10" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>或年龄：</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>民族：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>体重（</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>kg</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>）：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="7" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>联系方式：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="20">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>原患疾病：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="11" />
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="12">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>医院名称： </Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="7" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>病历号</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>门诊号：</Text>
+                              </Element>
+                           </XElements>
+                           <ColSpan>2</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>既往药品不良反应</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>事件：有</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="11">
+                                 <ID>chkPastYes</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="13" WhiteSpaceLength="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>                      </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>无</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkPastNo</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不详</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="9">
+                                 <ID>chkPastUnknow</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="7" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>家族药品不良反应</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>事件：有</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="5">
+                                 <ID>chkFamilyYes</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="5" WhiteSpaceLength="12">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>            </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>无</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkFamilyNo</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> 不详</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="9">
+                                 <ID>chkFamilyUnknow</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                           </XElements>
+                           <ColSpan>4</ColSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="9">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>381</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>127</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>232</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>419</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>93</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>236</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>341</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>509</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="1">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>相关</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>重要信息：</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="23" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>吸烟史</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="24">
+                                 <ID>chkSmoking</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <Checked>true</Checked>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  饮酒史</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="24">
+                                 <ID>chkDrinking</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <Checked>true</Checked>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  妊娠期</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="24">
+                                 <ID>chkPregnancy</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  肝病史</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="24">
+                                 <ID>chkLiverDisease</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  肾病史</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="24">
+                                 <ID>chkNephropathy</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <Checked>true</Checked>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  过敏史</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="25">
+                                 <ID>chkAllergies</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="26" WhiteSpaceLength="13">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>             </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="23" WhiteSpaceLength="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="22">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>其他</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="25">
+                                 <ID>chkImpOther</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="26" WhiteSpaceLength="13">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>             </Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>2344</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="7" NumOfColumns="9">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>药品</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>批准文号</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>商品名称</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>通用名称</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>（含剂型）</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>生产厂家</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>生产批号</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>用法用量</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                              <Element xsi:type="XString" StyleIndex="18">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>（次剂量、途径、日次数）</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>用药起止时间</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>用药原因</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>怀疑药品</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                           <RowSpan>3</RowSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>并用药</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>品</Text>
+                              </Element>
+                           </XElements>
+                           <RowSpan>3</RowSpan>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements />
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>73</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>196</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>196</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>283</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>413</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>206</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>442</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>277</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>254</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="2">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不良反应</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>事件名称：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不良反应</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>事件发生时间：　　年　</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>月　</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>日</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>1076</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>1268</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="4" NumOfColumns="1">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="20">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不良反应</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>事件过程描述（包括症状、体征、临床检验等）及处理情况（可附页）：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不良反应</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>事件的结果：痊愈</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkResultWell</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="6">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>      </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>好转</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkResultImproved</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="6">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>      </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>未好转</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkResultUnImproved</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="6">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>      </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不详</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkResultUnknow</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="6">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>      </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>有后遗症</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkResultSequelae</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>表现：</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="13" WhiteSpaceLength="30">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>                              </Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> 死亡</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkResultDead</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="6">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>      </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>直接死因：</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="13" WhiteSpaceLength="25">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>                         </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>    </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>死亡时间：</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="7">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>       </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>年</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>    </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>月</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>    </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>日</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="6">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>      </Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>停药或减量后，反应</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>事件是否消失或减轻？</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="11">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>           </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>是</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkWithdrawalYes</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>否</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkWithdrawalNo</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不明</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkWithdrawalUnknow</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>未停药或未减量</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="7">
+                                 <ID>chkWithdrawalUndo</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>再次使用可疑药品后是否再次出现同样反应</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>/</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>事件？</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="5">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>     </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>是</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkAgainYes</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>否</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkAgainNo</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不明</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkAgainUnknow</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>未再使用</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkAgainUndo</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>对原患疾病的影响：</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>不明显</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkImpactObvious</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>病程延长</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkImpactLong</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>病情加重</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkImpactIncrease</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>导致后遗症</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="0">
+                                 <ID>chkImpactSequelae</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="3">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>   </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>导致死亡</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="7">
+                                 <ID>chkImpactDead</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>2344</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="2">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>关联性评价</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>报告人评价：　　肯定</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkSpeakerSure</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　很可能</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkSpeakerProbably</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　可能</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkSpeakerMaybe</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　可能无关</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkSpeakerMaybeIrrelevant</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　待评价</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkSpeakerWaitAssess</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>无法评价</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkSpeakerUnableAssess</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <ValueBinding />
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>签名：　</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>报告单位评价：　肯定</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkUnitSure</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　很可能</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkUnitProbably</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　可能</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkUnitMaybe</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　可能无关</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkUnitMaybeIrrelevant</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　待评价</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkUnitWaitAssess</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>无法评价</Text>
+                              </Element>
+                              <Element xsi:type="XTextCheckBox" StyleIndex="3">
+                                 <ID>chkUnitUnableAssess</ID>
+                                 <PropertyExpressions />
+                                 <Deleteable>false</Deleteable>
+                                 <Width>62</Width>
+                                 <Height>62</Height>
+                                 <EventExpressions />
+                                 <RuntimeVisible>true</RuntimeVisible>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>签名：</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>311</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>2033</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="3">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>报告人信息</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="16" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>联系电话：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>职业：医生□　</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>药师□　</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="1">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text> </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>护士□  </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>其他□</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="13" WhiteSpaceLength="19">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>                   </Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>311</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>722</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>1311</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="3">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="19">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>电子邮箱：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="14" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>签名：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="17" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>311</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>1013</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>1019</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="1" NumOfColumns="5">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>报告单位信息</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="27" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>单位名称：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="25" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>联系人：</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="28" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>电话：　　</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="28" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>报告日期：</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>　年　　月　　日</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>  </Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="28" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>311</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>612</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>401</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>437</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>582</Width>
+                  </Element>
+               </Columns>
+            </Element>
+            <Element xsi:type="XTextTable" NumOfRows="2" NumOfColumns="2">
+               <Attributes />
+               <AutoFixTextMode>None</AutoFixTextMode>
+               <Expressions />
+               <XElements>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>生产企业请</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="27" />
+                              <Element xsi:type="XParagraphFlag" StyleIndex="25" />
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>填写信息来源</Text>
+                              </Element>
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>医疗机构□    经营企业□    个人□    文献报道□    上市后研究□    其他□</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="13" WhiteSpaceLength="16">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>                </Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="25" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+                  <Element xsi:type="XTextTableRow" StyleIndex="8">
+                     <Attributes />
+                     <AutoFixTextMode>None</AutoFixTextMode>
+                     <Expressions />
+                     <XElements>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>备</Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="4" WhiteSpaceLength="7">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>       </Text>
+                              </Element>
+                              <Element xsi:type="XString" StyleIndex="2">
+                                 <AutoFixTextMode>None</AutoFixTextMode>
+                                 <XElements xsi:nil="true" />
+                                 <Text>注</Text>
+                              </Element>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="27" />
+                           </XElements>
+                        </Element>
+                        <Element xsi:type="XTextTableCell" StyleIndex="15">
+                           <Attributes />
+                           <AutoFixTextMode>None</AutoFixTextMode>
+                           <XElements>
+                              <Element xsi:type="XParagraphFlag" StyleIndex="25" />
+                           </XElements>
+                        </Element>
+                     </XElements>
+                  </Element>
+               </XElements>
+               <Columns>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>311</Width>
+                  </Element>
+                  <Element xsi:type="XTextTableColumn">
+                     <Attributes />
+                     <Width>2033</Width>
+                  </Element>
+               </Columns>
+            </Element>
+         </XElements>
+      </Element>
+      <Element xsi:type="XTextFooter">
+         <Attributes />
+         <AutoFixTextMode>None</AutoFixTextMode>
+         <AcceptTab>true</AcceptTab>
+         <XElements />
+      </Element>
+   </XElements>
+   <Parameters />
+   <FileName>C:\Users\Administrator\Desktop\新建文件夹\药品不良反映报告单.xml</FileName>
+   <FileFormat>XML</FileFormat>
+   <UserHistories />
+   <ContentStyles>
+      <Default xsi:type="DocumentContentStyle">
+         <FontName>宋体</FontName>
+         <FontSize>14</FontSize>
+      </Default>
+      <Styles>
+         <Style Index="0">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="1">
+            <FontName>宋体</FontName>
+            <FontSize>18</FontSize>
+         </Style>
+         <Style Index="2">
+            <FontName>宋体</FontName>
+            <FontSize>9</FontSize>
+         </Style>
+         <Style Index="3">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Justify</Align>
+            <FirstLineIndent>36</FirstLineIndent>
+         </Style>
+         <Style Index="4">
+            <FontName>Times New Roman</FontName>
+            <FontSize>9</FontSize>
+         </Style>
+         <Style Index="5">
+            <FontName>宋体</FontName>
+            <FontSize>9</FontSize>
+            <Underline>true</Underline>
+         </Style>
+         <Style Index="6">
+            <FontName>宋体</FontName>
+            <FontSize>10.5</FontSize>
+            <Underline>true</Underline>
+         </Style>
+         <Style Index="7">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+         </Style>
+         <Style Index="8">
+            <FontName>宋体</FontName>
+            <FontSize>14</FontSize>
+         </Style>
+         <Style Index="9">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <VerticalAlign>Middle</VerticalAlign>
+            <BorderWidth>1</BorderWidth>
+            <PaddingLeft>21</PaddingLeft>
+            <PaddingRight>21</PaddingRight>
+         </Style>
+         <Style Index="10">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Justify</Align>
+            <FirstLineIndent>-73</FirstLineIndent>
+            <LeftIndent>73</LeftIndent>
+         </Style>
+         <Style Index="11">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Justify</Align>
+         </Style>
+         <Style Index="12">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderWidth>1</BorderWidth>
+            <PaddingLeft>21</PaddingLeft>
+            <PaddingRight>21</PaddingRight>
+         </Style>
+         <Style Index="13">
+            <FontName>Times New Roman</FontName>
+            <FontSize>9</FontSize>
+            <Underline>true</Underline>
+         </Style>
+         <Style Index="14">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Justify</Align>
+            <BorderWidth>4</BorderWidth>
+         </Style>
+         <Style Index="15">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <VerticalAlign>Middle</VerticalAlign>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>21</PaddingLeft>
+            <PaddingRight>21</PaddingRight>
+         </Style>
+         <Style Index="16">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+            <BorderWidth>4</BorderWidth>
+         </Style>
+         <Style Index="17">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderWidth>4</BorderWidth>
+         </Style>
+         <Style Index="18">
+            <FontName>宋体</FontName>
+            <FontSize>7.5</FontSize>
+         </Style>
+         <Style Index="19">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="20">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderWidth>1</BorderWidth>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>21</PaddingLeft>
+            <PaddingRight>21</PaddingRight>
+         </Style>
+         <Style Index="21">
+            <FontName>宋体</FontName>
+            <FontSize>14</FontSize>
+            <Align>Center</Align>
+         </Style>
+         <Style Index="22">
+            <FontName>宋体</FontName>
+            <FontSize>9</FontSize>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="23">
+            <FontName>Times New Roman</FontName>
+            <FontSize>9</FontSize>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="24">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+            <PaddingLeft>21</PaddingLeft>
+            <PaddingRight>21</PaddingRight>
+         </Style>
+         <Style Index="25">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Justify</Align>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="26">
+            <FontName>Times New Roman</FontName>
+            <FontSize>9</FontSize>
+            <Underline>true</Underline>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="27">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <Align>Center</Align>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+         <Style Index="28">
+            <FontName>宋体</FontName>
+            <FontSize>12</FontSize>
+            <BorderLeft>true</BorderLeft>
+            <BorderBottom>true</BorderBottom>
+            <BorderTop>true</BorderTop>
+            <BorderRight>true</BorderRight>
+         </Style>
+      </Styles>
+   </ContentStyles>
+   <RepeatedImages />
+   <ControlOptionsForDebug>
+      <RuleVisible>false</RuleVisible>
+      <UserInfo>
+         <ID>511</ID>
+         <Name>上官海燕</Name>
+         <PermissionLevel>0</PermissionLevel>
+      </UserInfo>
+      <DocumentOptions>
+         <SecurityOptions>
+            <AutoEnablePermissionWhenUserLogin>false</AutoEnablePermissionWhenUserLogin>
+            <TrackVisibleLevel0>
+               <UnderLineColorString>#ADD8E6</UnderLineColorString>
+               <DeleteLineColorString>#FF7F50</DeleteLineColorString>
+            </TrackVisibleLevel0>
+            <TrackVisibleLevel1 />
+            <TrackVisibleLevel2>
+               <BackgroundColorString>#FFFFE0</BackgroundColorString>
+               <UnderLineColorNum>2</UnderLineColorNum>
+               <DeleteLineNum>2</DeleteLineNum>
+            </TrackVisibleLevel2>
+            <TrackVisibleLevel3>
+               <BackgroundColorString>#FFFFE0</BackgroundColorString>
+               <UnderLineColorNum>2</UnderLineColorNum>
+               <DeleteLineNum>2</DeleteLineNum>
+            </TrackVisibleLevel3>
+         </SecurityOptions>
+         <ViewOptions>
+            <NewInputContentUnderlineColor />
+            <AdornTextBackColorValue>#64808080</AdornTextBackColorValue>
+            <FieldHoverBackColorValue>#FFFFFF</FieldHoverBackColorValue>
+            <TagColorForNormalFieldValue>#FF0000</TagColorForNormalFieldValue>
+         </ViewOptions>
+         <BehaviorOptions>
+            <ParagraphFlagFollowTableOrSection>true</ParagraphFlagFollowTableOrSection>
+            <ValidateUserIDWhenEditDeleteComment>true</ValidateUserIDWhenEditDeleteComment>
+            <InsertDocumentWithCheckMRID>PromptForbitWhenFail</InsertDocumentWithCheckMRID>
+         </BehaviorOptions>
+         <EditOptions>
+            <GridLinePreviewText>DCWriter是南京都昌信息科技有限公司自主研发的专业的电子病历文档编辑器。</GridLinePreviewText>
+         </EditOptions>
+      </DocumentOptions>
+      <Font>
+         <Size>12</Size>
+      </Font>
+      <HeaderFooterFlagVisible>None</HeaderFooterFlagVisible>
+      <JumpPrint />
+      <PageTitlePosition>BottomRight</PageTitlePosition>
+      <Readonly>true</Readonly>
+   </ControlOptionsForDebug>
+   <GlobalJavaScriptReferences />
+   <Info>
+      <Title>制表单位：国家药品不良反应监察中心</Title>
+      <Description />
+      <LicenseText>南京都昌信息科技有限公司:南京都昌信息科技有限公司2019年旗舰版</LicenseText>
+      <CreationTime>2014-09-16T08:53:00</CreationTime>
+      <LastModifiedTime>2019-07-23T15:04:05.4502266+08:00</LastModifiedTime>
+      <LastPrintTime>1980-01-01T00:00:00</LastPrintTime>
+      <Author>LL</Author>
+      <Operator>DCSoft.Writer Version:1.2014.9.16</Operator>
+      <NumOfPage>1</NumOfPage>
+   </Info>
+   <BodyText>药 品 不 良 反 应 / 事 件 报 告 表
+
+首次报告□        跟踪报告□
+报告类型：新的□  严重□  一般□      科室                          办公电话                         编码：       
+患者姓名： 性别：男□女□ 出生日期：     年 月 日
+或年龄：  民族： 体重（kg）： 联系方式： 
+原患疾病： 医院名称： 
+病历号/门诊号： 既往药品不良反应/事件：有□                      无□  不详□
+家族药品不良反应/事件：有□            无□ 不详□ 相关重要信息： 吸烟史■  饮酒史■  妊娠期□  肝病史□  肾病史■  过敏史□               其他□              药品 批准文号 商品名称 通用名称
+（含剂型） 生产厂家 生产批号 用法用量
+（次剂量、途径、日次数） 用药起止时间 用药原因 
+怀疑药品                 
+                
+                
+并用药
+
+品                 
+                
+                不良反应/事件名称： 不良反应/事件发生时间：　　年　  月　 日 不良反应/事件过程描述（包括症状、体征、临床检验等）及处理情况（可附页）：
+ 
+不良反应/事件的结果：痊愈□      好转□      未好转□      不详□      有后遗症□  表现：                              
+
+ 死亡□      直接死因：                             死亡时间：       年    月    日       
+停药或减量后，反应/事件是否消失或减轻？           是□   否□   不明□   未停药或未减量□
+
+再次使用可疑药品后是否再次出现同样反应/事件？     是□   否□   不明□   未再使用□ 
+对原患疾病的影响： 不明显□   病程延长□   病情加重□   导致后遗症□   导致死亡□ 关联性评价 报告人评价：　　肯定□　很可能□　可能□　可能无关□　待评价□　 无法评价□　 签名：　
+
+报告单位评价：　肯定□　很可能□　可能□　可能无关□　待评价□　 无法评价□　 签名： 报告人信息 联系电话： 职业：医生□　 药师□　 护士□    其他□                      电子邮箱： 签名： 报告单位信息 单位名称： 联系人： 电话：　　 报告日期：  　年　　月　　日   生产企业请
+
+填写信息来源 医疗机构□    经营企业□    个人□    文献报道□    上市后研究□    其他□                 
+备       注   </BodyText>
+   <Comments />
+   <LocalConfig />
+   <PageSettings>
+      <PrinterName />
+      <PaperSource />
+      <PaperKind>Letter</PaperKind>
+      <PaperWidth>850</PaperWidth>
+      <PaperHeight>1098</PaperHeight>
+      <LeftMargin>39</LeftMargin>
+      <TopMargin>0</TopMargin>
+      <RightMargin>39</RightMargin>
+      <BottomMargin>0</BottomMargin>
+   </PageSettings>
+</XTextDocument>

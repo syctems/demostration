@@ -118,14 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="next_27x27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\next_27x27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="信息_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\信息_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="小诊所_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\小诊所_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="箭头_上一页_gaitubao_27x27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\箭头_上一页_gaitubao_27x27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="系统_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\系统_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="人员_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\人员_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d1_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d1_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="预约信息" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\预约信息.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pre_27x27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pre_27x27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="帮助_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\帮助_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="分类_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\分类_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="综合诊断_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\综合诊断_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,28 +154,25 @@
   <data name="我的化验单_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\我的化验单_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="预约信息_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\预约信息_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="小诊所_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\小诊所_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="人员_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\人员_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="分类_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\分类_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="预约信息" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\预约信息.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="帮助_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\帮助_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="箭头_下一页_o_gaitubao_27x271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\箭头_下一页_o_gaitubao_27x271.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="药品_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\药品_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="d1_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\d1_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="退出_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\退出_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="箭头_下一页_o_gaitubao_27x27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\箭头_下一页_o_gaitubao_27x27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="预约信息_gaitubao_62x62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\预约信息_gaitubao_62x62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="箭头_下一页_gaitubao_27x27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\箭头_下一页_gaitubao_27x27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

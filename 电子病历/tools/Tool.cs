@@ -75,7 +75,6 @@ namespace 电子病历.tools
             return info.ToString();
         }
 
-
         public static string GetXMLInformation(string TagName,int index)
         {
             string value = null;

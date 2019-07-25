@@ -73,6 +73,26 @@ namespace 电子病历.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap next_27x27 {
+            get {
+                object obj = ResourceManager.GetObject("next_27x27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap pre_27x27 {
+            get {
+                object obj = ResourceManager.GetObject("pre_27x27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 人员_gaitubao_62x62 {
             get {
                 object obj = ResourceManager.GetObject("人员_gaitubao_62x62", resourceCulture);
@@ -126,6 +146,46 @@ namespace 电子病历.Properties {
         internal static System.Drawing.Bitmap 我的化验单_gaitubao_62x62 {
             get {
                 object obj = ResourceManager.GetObject("我的化验单_gaitubao_62x62", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 箭头_上一页_gaitubao_27x27 {
+            get {
+                object obj = ResourceManager.GetObject("箭头_上一页_gaitubao_27x27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 箭头_下一页_gaitubao_27x27 {
+            get {
+                object obj = ResourceManager.GetObject("箭头_下一页_gaitubao_27x27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 箭头_下一页_o_gaitubao_27x27 {
+            get {
+                object obj = ResourceManager.GetObject("箭头_下一页_o_gaitubao_27x27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 箭头_下一页_o_gaitubao_27x271 {
+            get {
+                object obj = ResourceManager.GetObject("箭头_下一页_o_gaitubao_27x271", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -250,6 +250,12 @@
     <Content Include="file\病案首页.xml" />
     <Content Include="file\药品不良反映报告单.xml" />
     <Content Include="file\超声诊断书.xml" />
+    <None Include="Resources\箭头_下一页_gaitubao_27x27.png" />
+    <None Include="Resources\箭头_下一页_o_gaitubao_27x271.png" />
+    <None Include="Resources\箭头_下一页_o_gaitubao_27x27.png" />
+    <None Include="Resources\箭头_上一页_gaitubao_27x27.png" />
+    <None Include="Resources\pre_27x27.png" />
+    <None Include="Resources\next_27x27.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

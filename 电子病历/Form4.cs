@@ -26,10 +26,13 @@ namespace 电子病历
         private string id = null;
         private List<commonClass> jsonData = null;
         private int xmlNumber = 0;
-
+        private int pageNumber = 1;
+        private int pageSize;
+        private int pageCount; 
         public Form4()
         {
             InitializeComponent();
+            pageSize = pageNumber * 10;
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -41,8 +44,6 @@ namespace 电子病历
                 treeView1.Nodes.Add(t);
             }
         }
-
-
 
         private void deleteData()
         {
@@ -76,7 +77,9 @@ namespace 电子病历
         private void listData()
         {
             dataGridViewX1.Rows.Clear();
-            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse(Tool.getListApi(this.xmlNumber), "{\"pageSize\": \"" + 50 + "\"}"));
+            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse(Tool.getListApi(this.xmlNumber), "{\"pageSize\": \"" + pageSize + "\",\"pageNumber\": \"" + pageNumber + "\"}"));
+            pageCount = (int)Math.Ceiling((decimal)urlData["recordsTotal"] / pageSize);
+            labelItem1.Text = pageCount.ToString();
             List<commonClass> jsonData = JsonConvert.DeserializeObject<List<commonClass>>(urlData["data"].ToString());
             displayData(jsonData);
             return;
@@ -127,6 +130,7 @@ namespace 电子病历
                 writerControl2.GetElementById(info.Name).Text = (info.GetValue(detailData, null) == null) ? "" : info.GetValue(detailData, null).ToString();
             }
         }
+
         private void displayData(List<commonClass> jsonData)
         {
             int index = 0;
@@ -224,6 +228,48 @@ namespace 电子病历
             int index = dataGridViewX1.CurrentRow.Index;
             id = dataGridViewX1.Rows[index].Cells[0].Value.ToString();
             detailData();
+        }
+
+        private void ButtonItem3_Click(object sender, EventArgs e)
+        {
+            if (pageNumber == 1)
+                MessageBox.Show("已经跳转到首页了");
+            else
+                pageNumber--;
+            listData();
+        }
+
+        private void ButtonItem2_Click(object sender, EventArgs e)
+        {
+            if (pageNumber == pageCount)
+                MessageBox.Show("已经跳转到尾页了");
+            else
+                pageNumber++;
+            listData();
+        }
+
+        private void ButtonItem6_Click(object sender, EventArgs e)
+        {
+            int jumpInt = int.Parse(textBoxItem1.Text);
+            if (jumpInt > pageCount)
+            {
+                MessageBox.Show("数字超出总页数");
+                return;
+            }
+            pageNumber = jumpInt;
+            listData();
+        }
+
+        private void ButtonItem4_Click(object sender, EventArgs e)
+        {
+            pageNumber = 1;
+            listData();
+        }
+
+        private void ButtonItem5_Click(object sender, EventArgs e)
+        {
+            pageNumber = pageCount;
+            listData();
         }
     }
 }

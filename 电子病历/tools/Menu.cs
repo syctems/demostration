@@ -8,39 +8,61 @@ namespace 电子病历.tools
 {
     public class Menu
     {
-        private int id;
-        private int pid;
-        private String name;
+        private String id;
+        private String parentId;
+        private String categoryName;
+        private String categoryNo;
+        private String note;
 
-        public Menu(int id, int pid, String name)
+        public Menu(String id, String parentId, String categoryName, String categoryNo, String note)
         {
             this.id = id;
-            this.pid = pid;
-            this.name = name;
+            this.parentId = parentId;
+            this.categoryName = categoryName;
+            this.categoryNo = categoryNo;
+            this.note = note;
         }
-        public int getId()
+        public String getId()
         {
             return id;
         }
-        public void setId(int id)
+        public void setId(String id)
         {
             this.id = id;
         }
-        public int getPid()
+        public String getPid()
         {
-            return pid;
+            return parentId;
         }
-        public void setPid(int pid)
+        public void setPid(String pid)
         {
-            this.pid = pid;
+            this.parentId = pid;
         }
         public String getName()
         {
-            return name;
+            return categoryName;
         }
         public void setName(String name)
         {
-            this.name = name;
+            this.categoryName = name;
+        }
+
+        public String getCategoryNo()
+        {
+            return categoryNo;
+        }
+        public void setCategoryNo(String name)
+        {
+            this.categoryNo = name;
+        }
+
+        public String getNote()
+        {
+            return note;
+        }
+        public void setNote(String name)
+        {
+            this.note = name;
         }
     }
 

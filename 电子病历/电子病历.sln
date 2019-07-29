@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "电子病历", "电子病历.csproj", "{06E498F8-D954-46BB-94E9-4FC202F695E8}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "电子病历包", "..\电子病历包\电子病历包.vdproj", "{5F351E97-2DD2-4C2A-9D6C-AD63AA4154B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{06E498F8-D954-46BB-94E9-4FC202F695E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06E498F8-D954-46BB-94E9-4FC202F695E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06E498F8-D954-46BB-94E9-4FC202F695E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F351E97-2DD2-4C2A-9D6C-AD63AA4154B8}.Debug|Any CPU.ActiveCfg = Debug
+		{5F351E97-2DD2-4C2A-9D6C-AD63AA4154B8}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

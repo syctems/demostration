@@ -37,6 +37,9 @@
       <HintPath>..\..\..\Desktop\原始文件\DCSoftDemo20190231\DCSoft.Writer.dll</HintPath>
     </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="kse">
+      <HintPath>..\..\kwig\dist\kse.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.JScript" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />

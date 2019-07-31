@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -123,6 +124,13 @@ namespace 电子病历.tools
         public static string getDeleteApi(int index)
         {
             return GetXMLInformation("serverIP", index) + "/" + GetXMLInformation("currentClass", index) + "/" + GetXMLInformation("deleteAction", index);
+        }
+
+        public static string removeObjId(object o)
+        {
+            JObject obj = JObject.FromObject(o);
+            obj.Remove("id");
+            return obj.ToString();
         }
     }
 }

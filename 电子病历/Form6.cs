@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
-using Open_Newtonsoft_Json;
-using Open_Newtonsoft_Json.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using 电子病历.tools;
 using Menu = 电子病历.tools.Menu;
 
@@ -71,12 +71,15 @@ namespace 电子病历
         {
             TreeNode tn = treeView1.SelectedNode;
             menuObj = getMenuListObj(tn.Text);
-            //Menu obj = new Menu();
-            //obj.setName(textBoxX2.Text);
-            //obj.setCategoryNo(textBoxX1.Text);
-            //obj.setNote(richTextBoxEx1.Text);
-            //string XMLJsonData = Tool.stringToJSON();
-            //JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/medical/add"), XMLJsonData));
+            Menu obj = new Menu() {
+                fullpath = menuObj.fullpath,
+                parentId = menuObj.parentId,
+                categoryName = textBoxX2.Text,
+                categoryNo = textBoxX1.Text,
+                note = richTextBoxEx1.Text
+            };
+            string jsonData = Tool.stringToJSON(Tool.removeObjId(obj));
+  //          JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/medical/add",jsonData));
         }
 
         private void TreeView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -84,12 +87,12 @@ namespace 电子病历
             TreeNode tn = treeView1.SelectedNode;
             menuObj = getMenuListObj(tn.Text);
             if (tn.Tag == null)
-                displayFile(tn);
+                displayFilePage(tn);
             else
-                displayFolder(tn);
+                displayFolderPage(tn);
         }
 
-        private void displayFolder(TreeNode tn)
+        private void displayFolderPage(TreeNode tn)
         {
             superTabControl1.SelectedTabIndex = 1;
             Menu menuObj = getMenuListObj(tn.Text);
@@ -98,7 +101,7 @@ namespace 电子病历
             richTextBoxEx2.Text = menuObj.getNote();
         }
 
-        private void displayFile(TreeNode tn)
+        private void displayFilePage(TreeNode tn)
         {
             superTabControl1.SelectedTabIndex = 3;
             Menu menuObj = getMenuListObj(tn.Text);

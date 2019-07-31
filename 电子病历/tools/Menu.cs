@@ -8,59 +8,75 @@ namespace 电子病历.tools
 {
     public class Menu
     {
-        private String id;
-        private String parentId;
-        private String categoryName;
-        private String categoryNo;
-        private String note;
+        public string id;
+        public string parentId;
+        public string categoryName;
+        public string categoryNo;
+        public string fullpath;
+        public string note;
 
-        public Menu(String id, String parentId, String categoryName, String categoryNo, String note)
+        public Menu(string id, string parentId, string categoryName, string categoryNo, string note,string fullpath)
         {
             this.id = id;
             this.parentId = parentId;
             this.categoryName = categoryName;
             this.categoryNo = categoryNo;
             this.note = note;
+            this.fullpath = fullpath;
         }
-        public String getId()
+
+        public Menu(string parentId, string categoryName, string categoryNo, string note, string fullpath)
+        {
+            this.parentId = parentId;
+            this.categoryName = categoryName;
+            this.categoryNo = categoryNo;
+            this.note = note;
+            this.fullpath = fullpath;
+        }
+
+        public Menu()
+        {
+        }
+
+        public string getId()
         {
             return id;
         }
-        public void setId(String id)
+        public void setId(string id)
         {
             this.id = id;
         }
-        public String getPid()
+        public string getPid()
         {
             return parentId;
         }
-        public void setPid(String pid)
+        public void setPid(string pid)
         {
             this.parentId = pid;
         }
-        public String getName()
+        public string getName()
         {
             return categoryName;
         }
-        public void setName(String name)
+        public void setName(string name)
         {
             this.categoryName = name;
         }
 
-        public String getCategoryNo()
+        public string getCategoryNo()
         {
             return categoryNo;
         }
-        public void setCategoryNo(String name)
+        public void setCategoryNo(string name)
         {
             this.categoryNo = name;
         }
 
-        public String getNote()
+        public string getNote()
         {
             return note;
         }
-        public void setNote(String name)
+        public void setNote(string name)
         {
             this.note = name;
         }

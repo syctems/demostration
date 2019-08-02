@@ -12,26 +12,15 @@ namespace 电子病历.tools
         public string parentId;
         public string categoryName;
         public string categoryNo;
-        public string fullpath;
         public string note;
 
-        public Menu(string id, string parentId, string categoryName, string categoryNo, string note,string fullpath)
+        public Menu(string id, string parentId, string categoryName, string categoryNo, string note)
         {
             this.id = id;
             this.parentId = parentId;
             this.categoryName = categoryName;
             this.categoryNo = categoryNo;
             this.note = note;
-            this.fullpath = fullpath;
-        }
-
-        public Menu(string parentId, string categoryName, string categoryNo, string note, string fullpath)
-        {
-            this.parentId = parentId;
-            this.categoryName = categoryName;
-            this.categoryNo = categoryNo;
-            this.note = note;
-            this.fullpath = fullpath;
         }
 
         public Menu()

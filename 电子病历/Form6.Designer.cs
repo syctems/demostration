@@ -54,26 +54,6 @@
             this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX10 = new DevComponents.DotNetBar.LabelX();
-            this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX11 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxX7 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX8 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.richTextBoxEx4 = new DevComponents.DotNetBar.Controls.RichTextBoxEx();
-            this.labelX12 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel4 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX7 = new DevComponents.DotNetBar.LabelX();
-            this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
-            this.labelX8 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxX5 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX6 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.richTextBoxEx3 = new DevComponents.DotNetBar.Controls.RichTextBoxEx();
-            this.labelX9 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem4 = new DevComponents.DotNetBar.SuperTabItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -82,8 +62,6 @@
             this.superTabControl1.SuspendLayout();
             this.superTabControlPanel2.SuspendLayout();
             this.superTabControlPanel1.SuspendLayout();
-            this.superTabControlPanel3.SuspendLayout();
-            this.superTabControlPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -141,10 +119,8 @@
             this.superTabControl1.ControlBox.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
-            this.superTabControl1.Controls.Add(this.superTabControlPanel4);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel3);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Controls.Add(this.superTabControlPanel1);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel2);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
             this.superTabControl1.Name = "superTabControl1";
@@ -156,9 +132,7 @@
             this.superTabControl1.TabIndex = 0;
             this.superTabControl1.Tabs.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.superTabItem1,
-            this.superTabItem2,
-            this.superTabItem3,
-            this.superTabItem4});
+            this.superTabItem2});
             this.superTabControl1.Text = "superTabControl1";
             // 
             // superTabControlPanel2
@@ -189,6 +163,7 @@
             this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX3.TabIndex = 16;
             this.buttonX3.Text = "删除";
+            this.buttonX3.Click += new System.EventHandler(this.ButtonX3_Click);
             // 
             // labelX4
             // 
@@ -214,6 +189,7 @@
             this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX4.TabIndex = 15;
             this.buttonX4.Text = "修改";
+            this.buttonX4.Click += new System.EventHandler(this.ButtonX4_Click);
             // 
             // labelX5
             // 
@@ -285,7 +261,7 @@
             this.superTabItem2.AttachedControl = this.superTabControlPanel2;
             this.superTabItem2.GlobalItem = false;
             this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "修改文件夹";
+            this.superTabItem2.Text = "修改";
             // 
             // superTabControlPanel1
             // 
@@ -328,6 +304,7 @@
             this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX2.TabIndex = 8;
             this.buttonX2.Text = "清空";
+            this.buttonX2.Click += new System.EventHandler(this.ButtonX2_Click);
             // 
             // labelX1
             // 
@@ -412,259 +389,7 @@
             this.superTabItem1.AttachedControl = this.superTabControlPanel1;
             this.superTabItem1.GlobalItem = false;
             this.superTabItem1.Name = "superTabItem1";
-            this.superTabItem1.Text = "添加文件夹";
-            // 
-            // superTabControlPanel3
-            // 
-            this.superTabControlPanel3.Controls.Add(this.buttonX7);
-            this.superTabControlPanel3.Controls.Add(this.labelX10);
-            this.superTabControlPanel3.Controls.Add(this.buttonX8);
-            this.superTabControlPanel3.Controls.Add(this.labelX11);
-            this.superTabControlPanel3.Controls.Add(this.textBoxX7);
-            this.superTabControlPanel3.Controls.Add(this.textBoxX8);
-            this.superTabControlPanel3.Controls.Add(this.richTextBoxEx4);
-            this.superTabControlPanel3.Controls.Add(this.labelX12);
-            this.superTabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel3.Location = new System.Drawing.Point(0, 28);
-            this.superTabControlPanel3.Name = "superTabControlPanel3";
-            this.superTabControlPanel3.Size = new System.Drawing.Size(647, 422);
-            this.superTabControlPanel3.TabIndex = 0;
-            this.superTabControlPanel3.TabItem = this.superTabItem3;
-            // 
-            // buttonX7
-            // 
-            this.buttonX7.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonX7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX7.Location = new System.Drawing.Point(386, 344);
-            this.buttonX7.Name = "buttonX7";
-            this.buttonX7.Size = new System.Drawing.Size(75, 23);
-            this.buttonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX7.TabIndex = 16;
-            this.buttonX7.Text = "清空";
-            // 
-            // labelX10
-            // 
-            this.labelX10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX10.Location = new System.Drawing.Point(186, 55);
-            this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(75, 23);
-            this.labelX10.TabIndex = 10;
-            this.labelX10.Text = "编号";
-            // 
-            // buttonX8
-            // 
-            this.buttonX8.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonX8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX8.Location = new System.Drawing.Point(278, 344);
-            this.buttonX8.Name = "buttonX8";
-            this.buttonX8.Size = new System.Drawing.Size(75, 23);
-            this.buttonX8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX8.TabIndex = 15;
-            this.buttonX8.Text = "添加";
-            // 
-            // labelX11
-            // 
-            this.labelX11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX11.Location = new System.Drawing.Point(186, 234);
-            this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(75, 23);
-            this.labelX11.TabIndex = 12;
-            this.labelX11.Text = "备注";
-            // 
-            // textBoxX7
-            // 
-            this.textBoxX7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.textBoxX7.Border.Class = "TextBoxBorder";
-            this.textBoxX7.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX7.Location = new System.Drawing.Point(278, 55);
-            this.textBoxX7.Name = "textBoxX7";
-            this.textBoxX7.Size = new System.Drawing.Size(177, 21);
-            this.textBoxX7.TabIndex = 9;
-            // 
-            // textBoxX8
-            // 
-            this.textBoxX8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.textBoxX8.Border.Class = "TextBoxBorder";
-            this.textBoxX8.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX8.Location = new System.Drawing.Point(278, 123);
-            this.textBoxX8.Name = "textBoxX8";
-            this.textBoxX8.Size = new System.Drawing.Size(177, 21);
-            this.textBoxX8.TabIndex = 13;
-            // 
-            // richTextBoxEx4
-            // 
-            this.richTextBoxEx4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.richTextBoxEx4.BackgroundStyle.Class = "RichTextBoxBorder";
-            this.richTextBoxEx4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.richTextBoxEx4.Location = new System.Drawing.Point(278, 194);
-            this.richTextBoxEx4.Name = "richTextBoxEx4";
-            this.richTextBoxEx4.Size = new System.Drawing.Size(183, 100);
-            this.richTextBoxEx4.TabIndex = 14;
-            // 
-            // labelX12
-            // 
-            this.labelX12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX12.Location = new System.Drawing.Point(186, 122);
-            this.labelX12.Name = "labelX12";
-            this.labelX12.Size = new System.Drawing.Size(75, 23);
-            this.labelX12.TabIndex = 11;
-            this.labelX12.Text = "名称";
-            // 
-            // superTabItem3
-            // 
-            this.superTabItem3.AttachedControl = this.superTabControlPanel3;
-            this.superTabItem3.GlobalItem = false;
-            this.superTabItem3.Name = "superTabItem3";
-            this.superTabItem3.Text = "添加文件";
-            // 
-            // superTabControlPanel4
-            // 
-            this.superTabControlPanel4.Controls.Add(this.buttonX5);
-            this.superTabControlPanel4.Controls.Add(this.labelX7);
-            this.superTabControlPanel4.Controls.Add(this.buttonX6);
-            this.superTabControlPanel4.Controls.Add(this.labelX8);
-            this.superTabControlPanel4.Controls.Add(this.textBoxX5);
-            this.superTabControlPanel4.Controls.Add(this.textBoxX6);
-            this.superTabControlPanel4.Controls.Add(this.richTextBoxEx3);
-            this.superTabControlPanel4.Controls.Add(this.labelX9);
-            this.superTabControlPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel4.Location = new System.Drawing.Point(0, 28);
-            this.superTabControlPanel4.Name = "superTabControlPanel4";
-            this.superTabControlPanel4.Size = new System.Drawing.Size(647, 422);
-            this.superTabControlPanel4.TabIndex = 0;
-            this.superTabControlPanel4.TabItem = this.superTabItem4;
-            // 
-            // buttonX5
-            // 
-            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX5.Location = new System.Drawing.Point(386, 344);
-            this.buttonX5.Name = "buttonX5";
-            this.buttonX5.Size = new System.Drawing.Size(75, 23);
-            this.buttonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX5.TabIndex = 24;
-            this.buttonX5.Text = "删除";
-            // 
-            // labelX7
-            // 
-            this.labelX7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.Location = new System.Drawing.Point(186, 55);
-            this.labelX7.Name = "labelX7";
-            this.labelX7.Size = new System.Drawing.Size(75, 23);
-            this.labelX7.TabIndex = 18;
-            this.labelX7.Text = "编号";
-            // 
-            // buttonX6
-            // 
-            this.buttonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX6.Location = new System.Drawing.Point(278, 344);
-            this.buttonX6.Name = "buttonX6";
-            this.buttonX6.Size = new System.Drawing.Size(75, 23);
-            this.buttonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX6.TabIndex = 23;
-            this.buttonX6.Text = "修改";
-            // 
-            // labelX8
-            // 
-            this.labelX8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Location = new System.Drawing.Point(186, 234);
-            this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(75, 23);
-            this.labelX8.TabIndex = 20;
-            this.labelX8.Text = "备注";
-            // 
-            // textBoxX5
-            // 
-            this.textBoxX5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.textBoxX5.Border.Class = "TextBoxBorder";
-            this.textBoxX5.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX5.Location = new System.Drawing.Point(278, 55);
-            this.textBoxX5.Name = "textBoxX5";
-            this.textBoxX5.Size = new System.Drawing.Size(177, 21);
-            this.textBoxX5.TabIndex = 17;
-            // 
-            // textBoxX6
-            // 
-            this.textBoxX6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.textBoxX6.Border.Class = "TextBoxBorder";
-            this.textBoxX6.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX6.Location = new System.Drawing.Point(278, 123);
-            this.textBoxX6.Name = "textBoxX6";
-            this.textBoxX6.Size = new System.Drawing.Size(177, 21);
-            this.textBoxX6.TabIndex = 21;
-            // 
-            // richTextBoxEx3
-            // 
-            this.richTextBoxEx3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.richTextBoxEx3.BackgroundStyle.Class = "RichTextBoxBorder";
-            this.richTextBoxEx3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.richTextBoxEx3.Location = new System.Drawing.Point(278, 194);
-            this.richTextBoxEx3.Name = "richTextBoxEx3";
-            this.richTextBoxEx3.Size = new System.Drawing.Size(183, 100);
-            this.richTextBoxEx3.TabIndex = 22;
-            // 
-            // labelX9
-            // 
-            this.labelX9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX9.Location = new System.Drawing.Point(186, 122);
-            this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(75, 23);
-            this.labelX9.TabIndex = 19;
-            this.labelX9.Text = "名称";
-            // 
-            // superTabItem4
-            // 
-            this.superTabItem4.AttachedControl = this.superTabControlPanel4;
-            this.superTabItem4.GlobalItem = false;
-            this.superTabItem4.Name = "superTabItem4";
-            this.superTabItem4.Text = "修改文件";
+            this.superTabItem1.Text = "添加";
             // 
             // Form6
             // 
@@ -685,8 +410,6 @@
             this.superTabControl1.ResumeLayout(false);
             this.superTabControlPanel2.ResumeLayout(false);
             this.superTabControlPanel1.ResumeLayout(false);
-            this.superTabControlPanel3.ResumeLayout(false);
-            this.superTabControlPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -716,26 +439,6 @@
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX4;
         private DevComponents.DotNetBar.Controls.RichTextBoxEx richTextBoxEx2;
         private DevComponents.DotNetBar.LabelX labelX6;
-        private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel4;
-        private DevComponents.DotNetBar.SuperTabItem superTabItem4;
-        private DevComponents.DotNetBar.SuperTabControlPanel superTabControlPanel3;
-        private DevComponents.DotNetBar.SuperTabItem superTabItem3;
-        private DevComponents.DotNetBar.ButtonX buttonX7;
-        private DevComponents.DotNetBar.LabelX labelX10;
-        private DevComponents.DotNetBar.ButtonX buttonX8;
-        private DevComponents.DotNetBar.LabelX labelX11;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX7;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX8;
-        private DevComponents.DotNetBar.Controls.RichTextBoxEx richTextBoxEx4;
-        private DevComponents.DotNetBar.LabelX labelX12;
-        private DevComponents.DotNetBar.ButtonX buttonX5;
-        private DevComponents.DotNetBar.LabelX labelX7;
-        private DevComponents.DotNetBar.ButtonX buttonX6;
-        private DevComponents.DotNetBar.LabelX labelX8;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX5;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX6;
-        private DevComponents.DotNetBar.Controls.RichTextBoxEx richTextBoxEx3;
-        private DevComponents.DotNetBar.LabelX labelX9;
         private DevComponents.DotNetBar.Controls.RichTextBoxEx richTextBoxEx1;
     }
 }

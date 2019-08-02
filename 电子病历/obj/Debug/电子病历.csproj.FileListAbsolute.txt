@@ -57,3 +57,4 @@ C:\Users\Administrator\Desktop\demostration\电子病历\obj\Debug\电子病历.
 C:\Users\Administrator\Desktop\demostration\电子病历\obj\Debug\电子病历.pdb
 C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\demostration\电子病历\obj\Debug\电子病历.loginForm.resources

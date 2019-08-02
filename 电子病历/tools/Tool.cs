@@ -126,11 +126,33 @@ namespace 电子病历.tools
             return GetXMLInformation("serverIP", index) + "/" + GetXMLInformation("currentClass", index) + "/" + GetXMLInformation("deleteAction", index);
         }
 
-        public static string removeObjId(object o)
+        public static JObject removeObjId(object o)
         {
             JObject obj = JObject.FromObject(o);
             obj.Remove("id");
-            return obj.ToString();
+            return obj;
+        }
+
+        public static JObject changeObjField(object o ,string keyField,string changeField)
+        {
+            JObject obj = removeObjId(o);
+            if (obj.ContainsKey(keyField))
+            {
+                obj[changeField] = obj[keyField];
+                obj.Remove(keyField);
+            }
+            return obj;
+        }
+
+        public static JObject changeObjField2(object o, string keyField, string changeField)
+        {
+            JObject obj = JObject.FromObject(o);
+            if (obj.ContainsKey(keyField))
+            {
+                obj[changeField] = obj[keyField];
+                obj.Remove(keyField);
+            }
+            return obj;
         }
     }
 }

@@ -1,3 +1,5 @@
+package oldFold;
+import newFold.Hello;
 class Engine
 {
 	public void start() {}
@@ -48,5 +50,6 @@ public class Car
 		Car c = new Car();
 		c.l.wd.rollup();
 		c.w[0].inflate(72);
+		Hello.firstAction();
 	}
 }

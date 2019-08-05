@@ -17,6 +17,10 @@
 	<target  name="build" depends="compile">
 		<jar  basedir="${classes}" destfile="${lib}/${Car_jar}" />
 	</target>
+	
+	<target name="run" depends="build">
+				<echo message="构建完成" />
+	</target>
 
 	<target name="copyJar">
 		<mkdir dir="unDirJar" />
@@ -26,9 +30,10 @@
 			</fileset>
 		</copy>
 	</target>
-	
-	<target name="run" depends="build">
-				<echo message="构建完成" />
+
+	<target name="runClass">
+		<java classname="newFold.Hello" classpath="${classes}">
+		</java>
 	</target>
 
 	<target name="clean">

@@ -31,11 +31,7 @@ C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\电子病历.
 C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\电子病历.exe
 C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\电子病历.pdb
 C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\DevComponents.DotNetBar2.dll
-C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\DCSoft.Writer.xml
 C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\DevComponents.DotNetBar2.xml
-C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\ar\DCSoft.Writer.resources.dll
-C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\en\DCSoft.Writer.resources.dll
-C:\Users\Administrator\Desktop\demostration\电子病历\bin\Debug\zh-TW\DCSoft.Writer.resources.dll
 C:\Users\Administrator\Desktop\demostration\电子病历\obj\Debug\电子病历.csprojAssemblyReference.cache
 C:\Users\Administrator\Desktop\demostration\电子病历\obj\Debug\电子病历.Form1.resources
 C:\Users\Administrator\Desktop\demostration\电子病历\obj\Debug\电子病历.Form10.resources

@@ -35,15 +35,18 @@ namespace 电子病历
                 pwd = pwd,
             };
             string jsonData = JsonConvert.SerializeObject(obj);
-            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://88.88.89.139:9999/uuuu/auth/doLogin", jsonData));
+            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/uuuu/auth/doLogin", jsonData));
             if (urlData["status"].ToString() == "0")
             {
                 MessageBox.Show(urlData["txt"].ToString());
             }
             else
             {
+                Tool.tid = urlData["val"].ToString();
+                Tool.uid = urlData["data"]["id"].ToString();
                 Form1 mainForm = new Form1();
                 mainForm.Show();
+                this.Hide();
             }
         }
     }

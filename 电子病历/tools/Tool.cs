@@ -12,28 +12,41 @@ namespace 电子病历.tools
     class Tool
     {
         private static string path = Application.StartupPath + "../../../config/apiSet.xml";
+        public static string tid = null;
+        public static string uid = null;
         public static string CreatePostHttpResponse(string url, string postDataStr)
         {
+
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "POST";
             request.ContentType = "application/json";
             request.ServicePoint.Expect100Continue = false;
+            if (tid != null && uid != null)
+            {
+                request.Headers.Add("uid",Tool.uid);
+                request.Headers.Add("tid",Tool.tid);
+            }
             Stream myRequestStream = request.GetRequestStream();
-            StreamWriter myStreamWriter =
-                new StreamWriter(myRequestStream, Encoding.GetEncoding("utf-8"));
-
+            StreamWriter myStreamWriter =new StreamWriter(myRequestStream, Encoding.GetEncoding("utf-8"));
             myStreamWriter.Write(postDataStr);
             myStreamWriter.Close();
-
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-
             Stream myResponseStream = response.GetResponseStream();
-            StreamReader myStreamReader =
-                new StreamReader(myResponseStream, Encoding.GetEncoding("utf-8"));
+            StreamReader myStreamReader =new StreamReader(myResponseStream, Encoding.GetEncoding("utf-8"));
             string retString = myStreamReader.ReadToEnd();
             myStreamReader.Close();
             myResponseStream.Close();
             return retString;
+        }
+
+        public static bool checkLogin()
+        {
+            if (tid != null && uid != null)
+                return true;
+            MessageBox.Show("您还未登录,请先登录");
+            loginForm lform = new loginForm();
+            lform.Show();          
+            return false;
         }
 
         public static string stringToJSON(string tmp)

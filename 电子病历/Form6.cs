@@ -32,7 +32,7 @@ namespace 电子病历
         private void init()
         {
             treeView1.Nodes.Clear();
-            menuList = JsonConvert.DeserializeObject<List<Menu>>(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/medical/allnodes", "{}"));
+            menuList = JsonConvert.DeserializeObject<List<Menu>>(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/drug/category/allnodes", "{}"));
             getMenu(menuList);
         }
 
@@ -116,17 +116,19 @@ namespace 电子病历
             Menu obj = new Menu()
             {
                 id = menuObj.id,
-                parentId = menuObj.id,
-                categoryName = textBoxX2.Text,
-                categoryNo = textBoxX1.Text,
+                upId = menuObj.id,
+                caption = textBoxX2.Text,
+                sn = textBoxX1.Text,
                 note = richTextBoxEx1.Text
             };
             string jsonData = Tool.changeObjField(obj, "note", "bigTxt").ToString();
-            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/medical/save", jsonData));
-            if (urlData["flag"].ToString() == "1")
+            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/drug/category/add", jsonData));
+            if (urlData["status"].ToString() == "1")
                 MessageBox.Show("添加成功");
             else
                 MessageBox.Show("添加失败");
+
+            clearText();
         }
 
         private void ButtonX4_Click(object sender, EventArgs e)
@@ -142,41 +144,53 @@ namespace 电子病历
             Menu obj = new Menu()
             {
                 id = menuObj.id,
-                parentId = menuObj.parentId,
-                categoryName = textBoxX4.Text,
-                categoryNo = textBoxX3.Text,
+                upId = menuObj.upId,
+                caption = textBoxX4.Text,
+                sn = textBoxX3.Text,
                 note = richTextBoxEx2.Text
             };
             string jsonData = Tool.changeObjField2(obj,"note","bigTxt").ToString();
-            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/medical/updateCategory", jsonData));
-            if (urlData["flag"].ToString() == "1")
+            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/drug/category/update", jsonData));
+            if (urlData["status"].ToString() == "1")
                 MessageBox.Show("修改成功");
             else
                 MessageBox.Show("修改失败");
+            clearText();
         }
 
         private void deleteMedical()
         {
             TreeNode tn = treeView1.SelectedNode;
             menuObj = getMenuListObj(tn.Text);
-            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/medical/delete", "{\"id\": \"" + menuObj.id + "\"}"));
-            if (urlData["flag"].ToString() == "1")
+            JObject urlData = JObject.Parse(Tool.CreatePostHttpResponse("http://10.0.253.9:9999/pppp/drug/category/delete", "{\"id\": \"" + menuObj.id + "\"}"));
+            if (urlData["status"].ToString() == "1")
                 MessageBox.Show("删除成功");
             else
                 MessageBox.Show("删除失败");
+            clearText();
         }
 
         private void ButtonX3_Click(object sender, EventArgs e)
         {
             deleteMedical();
             init();
+            clearText();
         }
 
         private void ButtonX2_Click(object sender, EventArgs e)
         {
+            clearText();
+        }
+
+        private void clearText()
+        {
             textBoxX1.Text = "";
             textBoxX2.Text = "";
             richTextBoxEx1.Clear();
+
+            textBoxX3.Text = "";
+            textBoxX4.Text = "";
+            richTextBoxEx2.Clear();
         }
     }
 }

@@ -9,17 +9,18 @@ namespace 电子病历.tools
     public class Menu
     {
         public string id;
-        public string parentId;
-        public string categoryName;
-        public string categoryNo;
+        public string upId;
+        public string caption;
+        public string sn;
         public string note;
+        public string bigTxt;
 
-        public Menu(string id, string parentId, string categoryName, string categoryNo, string note)
+        public Menu(string id, string upid, string caption, string sn, string note)
         {
             this.id = id;
-            this.parentId = parentId;
-            this.categoryName = categoryName;
-            this.categoryNo = categoryNo;
+            this.upId = upid;
+            this.caption = caption;
+            this.sn = sn;
             this.note = note;
         }
 
@@ -37,28 +38,28 @@ namespace 电子病历.tools
         }
         public string getPid()
         {
-            return parentId;
+            return upId;
         }
         public void setPid(string pid)
         {
-            this.parentId = pid;
+            this.upId = pid;
         }
         public string getName()
         {
-            return categoryName;
+            return caption;
         }
         public void setName(string name)
         {
-            this.categoryName = name;
+            this.caption = name;
         }
 
         public string getCategoryNo()
         {
-            return categoryNo;
+            return sn;
         }
         public void setCategoryNo(string name)
         {
-            this.categoryNo = name;
+            this.sn = name;
         }
 
         public string getNote()

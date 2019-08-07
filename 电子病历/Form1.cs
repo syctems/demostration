@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevComponents.DotNetBar;
+using 电子病历.tools;
 namespace 电子病历
 {
     public partial class Form1 : Office2007Form
@@ -15,11 +16,12 @@ namespace 电子病历
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Tool.checkLogin();
         }
 
         private void ButtonItem16_Click(object sender, EventArgs e)
